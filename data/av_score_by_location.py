@@ -13,7 +13,7 @@ def calculate_average(scores):
     else:
         # Check if the converted float value is NaN
         if math.isnan(float(scores)):
-            return 0.1
+            return 0
         else:
             return float(scores)
 
