@@ -11,11 +11,7 @@ def calculate_average(scores):
         score_list = scores.split('-')
         return (float(score_list[0]) + float(score_list[1])) / 2
     else:
-        # Check if the converted float value is NaN
-        if math.isnan(float(scores)):
-            return 0
-        else:
-            return float(scores)
+        return float(scores)
 
 # Apply the calculate_average function to the 'OverAll Score' column
 df['OverAll Score'] = df['OverAll Score'].apply(calculate_average)
