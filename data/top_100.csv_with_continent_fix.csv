@@ -1,4 +1,4 @@
-University,Name,Location,No.student,No.studentperstaff,InternationalStudent,Female:MaleRatio,OverAllScore,TeachingScore,ResearchScore,CitationsScore,IndustryIncomeScore,InternationalOutlookScore,Latitude,Longitude,Continent
+University,Name,Location,Nostudent,Nostudentperstaff,InternationalStudent,FemaleMaleRatio,OverAllScore,TeachingScore,ResearchScore,CitationsScore,IndustryIncomeScore,InternationalOutlookScore,Latitude,Longitude,Continent
 1,University of Oxford,United Kingdom,"20,965",10.6,42%,48:52:00,96.4,92.3,99.7,99,74.9,96.2,51.7579,-1.2618,Europe
 2,Harvard University,United States,"21,887",9.6,25%,50:50:00,95.2,94.8,99,99.3,49.5,80.5,42.3744,-71.1182,North America
 3,University of Cambridge,United Kingdom,"20,185",11.3,39%,47:53:00,94.8,90.9,99.5,97,54.2,95.8,52.2054,0.1132,Europe
