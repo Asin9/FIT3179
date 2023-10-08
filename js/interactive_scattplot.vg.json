@@ -1,49 +1,116 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "height": 500,
   "width": 500,
-  "title": "COVID-19 Cases per Country (13 Oct 2020)",
+  "height": 500,
+  "title": "University Overall Score vs Students per Staff",
   "data": {
-    "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100.csv_with_continent.csv"
+    "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100.csv_with_continent__fix.csv"
   },
-    "params": [
+  "params": [
     {
-      "name": "Population_Above",
-
-      "value": 0,
-      "bind": {"input": "range", "min": 1, "max": 100, "step": -1}
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "North America",
+          "Europe",
+          "Asia",
+          "Oceania"
+        ],
+        "labels": [
+          "Show All",
+          "North America",
+          "Europe",
+          "Asia",
+          "Oceania"
+        ],
+        "name": "Continent Selection: "
+      }
     }
   ],
-  "selection": {
-    "continent_selection": {
-      "type": "multi", "fields": ["Rank"], "bind": "legend"
+  "transform": [
+    {"filter": "datum.Nostudentperstaff > 0"},
+    {"calculate": "datum.Nostudentperstaff", "as": "Population"},
+    {"calculate": "datum.Nostudent", "as": "Number of Students"},
+    {"calculate": "datum.OverAllScore", "as": "Score"},
+    {"calculate": "datum.Name", "as": "University Name"},
+    {"filter": "Continent_selection == null || datum.Continent == Continent_selection"
     }
-  },
-  "transform":[
-
-    {"filter": "datum.Rank > Population_Above"}
-
   ],
-  "mark": "point",
   "encoding": {
     "x": {
-      "field": "No of student per staff",
+      "field": "Population",
       "type": "quantitative",
-      "title":"Confirmed Cases",
-      "axis": {"tickCount": 7},
-      "scale": {"type": "linear",  "domain":[1, 20]}
+      "title": "Students per Staff",
+      "scale": {"domain": [60,0]}
     },
     "y": {
-      "field": "Rank",
+      "field": "Score",
       "type": "quantitative",
-      "axis": { "tickCount": 6},
-      "scale": {"type": "linear", "domain":[100, 1]}
+      "title": "Overall Score",
+      "scale": {"type": "linear", "base": 10, "domain": [60,100]}
     },
-    "fill": {"field": "Continent",  "type": "nominal","scale": {"domain":["North America", "South America", "Europe", "Africa", "Asia", "Oceania"], "range": ["#e41a1c", "#984ea3", "#ff7f00", "#a6cee3", "#377eb8", "#a65628"]}},
-    "color": {"field": "Continent", "type": "nominal","scale": {"domain":["North America", "South America", "Europe", "Africa", "Asia", "Oceania"],"range": ["#e41a1c", "#984ea3", "#ff7f00", "#a6cee3", "#377eb8", "#a65628"]}
-    },
-    "opacity": {
-      "condition": {"selection": "continent_selection", "value": 0.8},
-      "value": 0.2
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Europe", "North America", "Asia", "Oceania"],
+        "range": ["#e41a1c", "#984ea3", "#377eb8", "#a65628"]
+      },
+      "legend": {"title": "Continent"}
     }
-}}
+  },
+  "layer": [
+    {
+      "mark": "circle",
+      "encoding": {
+        "size": {
+          "field": "Number of Students",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [0, 20000, 40000, 60000],
+            "range": [10, 50, 150, 200, 300, 400]
+          },
+          "legend": {"format": ".1s"}
+        },
+        "opacity": {"value": 0.6},
+        "tooltip": [
+          {"field": "University Name", "type": "nominal"},
+          {"field": "Score", "type": "quantitative"},
+          {"field": "Number of Students", "type": "quantitative", "format": ","}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "dx": -4,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Name", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['Name'] == 'University of Oxford' || datum['Name'] == 'Stanford University' ||datum['Name'] == 'Tsinghua University'  ||datum['Name'] == 'University of Melbourne'  ",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "University Name", "type": "nominal"},
+          {"field": "Score", "type": "quantitative"},
+          {"field": "Population", "type": "quantitative", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"}
+  }
+}
