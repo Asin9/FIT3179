@@ -1,0 +1,77 @@
+University,Name,Location,Nostudent,Nostudentperstaff,InternationalStudent,FemaleMaleRatio,OverAllScore,TeachingScore,ResearchScore,CitationsScore,IndustryIncomeScore,InternationalOutlookScore,Latitude,Longitude,Continent,Male_Students,Female_Students
+1,University of Oxford,United Kingdom,20965,10.6,42%,48 : 52,96.4,92.3,99.7,99.0,74.9,96.2,51.7579,-1.2618,Europe,10063,10902
+2,Harvard University,United States,21887,9.6,25%,50 : 50,95.2,94.8,99.0,99.3,49.5,80.5,42.3744,-71.1182,North America,10944,10944
+3,University of Cambridge,United Kingdom,20185,11.3,39%,47 : 53,94.8,90.9,99.5,97.0,54.2,95.8,52.2054,0.1132,Europe,9487,10698
+3,Stanford University,United States,16164,7.1,24%,46 : 54,94.8,94.2,96.7,99.8,65.0,79.8,37.4277,-122.1701,North America,7435,8729
+7,Princeton University,United States,8279,8.0,23%,46 : 54,92.4,87.6,95.9,99.1,66.0,80.3,40.3431,-74.6551,North America,3808,4471
+8,"University of California, Berkeley",United States,40921,18.4,24%,52 : 48,92.1,86.4,95.8,99.0,76.8,78.4,37.8702,-122.2595,North America,21279,19642
+9,Yale University,United States,13482,5.9,21%,52 : 48,91.4,92.6,92.7,97.0,55.0,70.9,41.3163,-72.9223,North America,7011,6471
+13,The University of Chicago,United States,15366,6.0,36%,47 : 53,88.9,86.5,88.8,97.7,56.2,74.2,41.7886,-87.5987,North America,7222,8144
+14,University of Pennsylvania,United States,21453,6.3,23%,53 : 47,88.8,86.0,88.8,97.0,75.8,71.5,39.9522,-75.1932,North America,11370,10083
+15,Johns Hopkins University,United States,17584,4.7,29%,53 : 47,88.3,79.4,91.5,97.0,89.5,75.3,39.3299,-76.6205,North America,9320,8264
+18,University of Toronto,Canada,77468,25.8,26%,56 : 44,87.4,77.3,93.3,92.8,65.5,89.7,43.6634,-79.396,North America,43382,34086
+19,National University of Singapore,Singapore,32337,19.8,25%,51 : 49,87.1,76.4,93.0,90.2,87.0,94.0,1.2966,103.7764,Asia,16492,15845
+20,Cornell University,United States,24027,10.3,26%,51 : 49,85.9,80.2,86.1,97.3,40.4,76.9,42.4534,-76.4735,North America,12254,11773
+21,"University of California, Los Angeles",United States,42434,9.7,16%,56 : 44,85.8,80.4,88.9,95.4,58.8,65.0,34.0699,-118.4438,North America,23763,18671
+22,UCL,United Kingdom,36790,10.3,60%,59 : 41,85.7,74.5,85.4,97.9,44.5,96.7,51.5246,-0.134,Europe,21706,15084
+23,University of Michigan-Ann Arbor,United States,45912,8.2,17%,50 : 50,82.9,79.3,84.6,93.6,48.7,59.2,42.2771,-83.7382,North America,22956,22956
+24,New York University,United States,36337,9.8,42%,57 : 43,82.7,74.2,84.0,95.0,44.6,74.7,40.7295,-73.9965,North America,20712,15625
+25,Duke University,United States,16091,4.2,24%,52 : 48,82.6,78.1,76.2,95.7,99.6,68.0,36.0014,-78.9382,North America,8367,7724
+26,Northwestern University,United States,19175,13.2,20%,51 : 49,82.1,71.7,80.7,97.5,85.0,67.0,42.0565,-87.6753,North America,9779,9396
+26,University of Washington,United States,47727,10.8,18%,55 : 45,82.1,71.6,82.8,98.9,53.9,63.0,47.6546,-122.3075,North America,26250,21477
+28,Carnegie Mellon University,United States,14305,12.9,47%,44 : 56,81.1,65.4,81.8,98.7,55.2,80.1,40.4432,-79.9428,North America,6294,8011
+29,University of Edinburgh,United Kingdom,32845,11.8,47%,62 : 38,79.8,66.9,74.5,97.1,40.9,95.6,55.9445,-3.1892,Europe,20364,12481
+31,University of Hong Kong,Hong Kong,18087,18.2,43%,54 : 46,78.5,65.6,74.1,92.4,60.6,98.7,22.2831,114.1366,Asia,9767,8320
+32,"University of California, San Diego",United States,37030,11.3,28%,48 : 52,78.1,60.2,77.2,98.2,93.0,67.8,32.8801,-117.234,North America,17774,19256
+33,LMU Munich,Germany,35003,34.2,19%,61 : 39,77.7,67.3,78.3,87.4,100.0,70.5,48.1507,11.5805,Europe,21352,13651
+34,University of Melbourne,Australia,49588,23.8,47%,58 : 42,77.6,67.1,75.9,85.8,78.1,93.6,-37.7983,144.961,Oceania,28761,20827
+35,King’s College London,United Kingdom,28965,11.8,52%,63 : 37,77.1,58.0,72.9,98.2,45.6,96.1,51.5115,-0.116,Europe,18248,10717
+36,"Nanyang Technological University, Singapore",Singapore,24651,15.1,25%,48 : 52,77.0,60.9,77.9,87.2,84.5,94.5,1.3483,103.6831,Asia,11832,12819
+37,London School of Economics and Political Science,United Kingdom,11120,11.9,73%,55 : 45,76.5,59.2,74.3,95.1,37.8,92.8,51.5144,-0.1165,Europe,6116,5004
+40,University of British Columbia,Canada,56452,18.9,34%,55 : 45,75.7,62.9,73.1,88.8,47.9,94.8,49.2606,-123.246,North America,31049,25403
+42,KU Leuven,Belgium,47663,36.5,18%,51 : 49,74.6,59.7,74.9,86.7,99.2,76.8,50.8781,4.6997,Europe,24308,23355
+43,Universität Heidelberg,Germany,19347,13.5,21%,55 : 45,74.1,67.2,61.5,96.0,55.7,71.2,49.4113,8.7062,Europe,10641,8706
+44,Monash University,Australia,58725,42.5,41%,57 : 43,73.6,56.9,68.7,90.4,78.4,91.0,-37.9142,145.1347,Oceania,33473,25252
+46,McGill University,Canada,32309,12.5,30%,60 : 40,73.0,62.0,72.4,82.5,43.5,91.0,45.5048,-73.5772,North America,19385,12924
+47,Paris Sciences et Lettres - PSL Research University Paris,France,16218,15.0,22%,51 : 49,72.9,68.2,73.5,75.5,78.8,76.3,48.8546,2.3376,Europe,8271,7947
+48,University of Illinois at Urbana-Champaign,United States,48674,17.4,22%,48 : 52,72.7,67.1,78.9,78.1,50.1,56.2,40.102,-88.2272,North America,23364,25310
+49,Karolinska Institute,Sweden,8021,9.9,27%,70 : 30,72.4,51.1,68.8,94.0,66.4,87.3,59.3481,18.0237,Europe,5615,2406
+50,University of Texas at Austin,United States,49171,17.4,10%,53 : 47,72.3,66.2,73.1,87.5,51.3,40.1,30.2849,-97.7341,North America,26061,23110
+51,Fudan University,China,36318,11.9,9%,52 : 48,72.0,71.8,75.8,74.5,77.3,45.2,31.2974,121.5036,Asia,18885,17433
+52,Shanghai Jiao Tong University,China,37478,11.5,8%,42 : 58,71.2,75.3,82.9,59.9,100.0,43.7,31.0252,121.4338,Asia,15741,21737
+53,The University of Queensland,Australia,41372,34.2,41%,55 : 45,71.1,55.9,66.5,84.3,82.0,93.2,-27.4975,153.0137,Oceania,22755,18617
+54,University of Manchester,England,37035,14.2,44%,55 : 45,70.9,54.5,63.7,91.3,45.3,92.7,53.4668,-2.2339,Europe,20369,16666
+54,The University of Sydney,Australia,45853,19.0,45%,58 : 42,70.9,53.1,65.8,88.5,73.2,90.6,-33.8886,151.1873,Oceania,26595,19258
+57,Washington University in St Louis,United States,14420,7.8,24%,53 : 47,70.6,60.3,56.8,98.2,47.5,64.0,38.6488,-90.3108,North America,7643,6777
+59,Wageningen University & Research,Netherlands,15404,18.6,27%,55 : 45,70.3,50.4,60.2,93.2,100.0,88.8,51.96691613,5.655159046,Europe,8472,6932
+60,University of Amsterdam,Netherlands,29157,14.5,32%,59 : 41,69.6,48.0,64.1,93.3,44.4,91.9,52.3558,4.9557,Europe,17203,11954
+62,Australian National University,Australia,16758,14.6,51%,52 : 48,69.0,51.3,69.2,81.8,45.6,96.0,-35.2813,149.1183,Oceania,8714,8044
+63,"University of California, Davis",United States,37639,13.1,18%,60 : 40,68.5,59.7,66.3,80.9,52.4,68.7,38.5382,-121.7617,North America,22583,15056
+64,"University of California, Santa Barbara",United States,25860,28.5,20%,54 : 46,68.4,44.6,61.5,96.2,80.1,76.0,34.414,-119.8489,North America,13964,11896
+65,University of Southern California,United States,40549,12.6,22%,49 : 51,68.3,58.9,58.6,90.4,43.8,63.7,34.0224,-118.2851,North America,19869,20680
+66,Utrecht University,Netherlands,32532,17.1,13%,62 : 38,68.2,44.3,66.0,91.2,72.7,78.8,52.0852,5.1757,Europe,20170,12362
+69,University of North Carolina at Chapel Hill,United States,31080,7.9,8%,59 : 41,67.8,58.9,59.7,93.3,46.0,41.7,35.9049,-79.0469,North America,18337,12743
+71,Boston University,United States,27243,10.8,31%,59 : 41,67.5,55.9,56.1,92.9,41.1,65.9,42.3505,-71.1054,North America,16073,11170
+71,UNSW Sydney,Australia,45133,36.3,40%,47 : 53,67.5,51.1,59.0,85.9,63.5,95.1,-33.9173,151.2313,Oceania,21213,23920
+73,Charité - Universitätsmedizin Berlin,Germany,8429,18.0,21%,64 : 36,67.2,48.5,52.2,98.8,87.1,69.3,52.5265,13.3766,Europe,5395,3034
+75,University of Groningen,Netherlands,30009,24.4,28%,52 : 48,66.6,45.4,57.6,90.4,75.8,89.8,53.2193,6.5628,Europe,15605,14404
+76,University of Bristol,England,25680,14.6,31%,56 : 44,66.5,43.8,53.4,98.6,43.5,89.4,51.4585,-2.6022,Europe,14381,11299
+77,Leiden University,Netherlands,33648,19.3,20%,60 : 40,66.4,43.2,64.4,86.6,68.4,85.4,52.157,4.4855,Europe,20189,13459
+78,Yonsei University (Seoul campus),South Korea,19481,14.7,17%,50 : 50,66.3,67.0,68.9,63.9,94.8,52.8,37.5664,126.9387,Asia,9740,9740
+79,Hong Kong Polytechnic University,Hong Kong,19046,28.9,30%,51 : 49,65.8,46.6,57.0,86.7,56.0,97.6,22.3046,114.1796,Asia,9713,9333
+80,Erasmus University Rotterdam,Netherlands,31668,33.9,22%,53 : 47,65.7,38.6,57.1,95.6,64.4,89.7,51.9172,4.5263,Europe,16784,14884
+82,Emory University,United States,13190,4.2,20%,60 : 40,65.3,54.8,46.0,98.0,48.6,59.8,33.7971,-84.3222,North America,7914,5276
+82,University of Glasgow,Scotland,28540,13.5,41%,59 : 41,65.3,43.3,50.8,96.5,41.9,93.8,55.8724,-4.29,Europe,16839,11701
+82,University of Zurich,Switzerland,25003,13.7,22%,56 : 44,65.3,51.5,50.7,87.5,57.6,93.0,47.3746,8.5487,Europe,14002,11001
+85,McMaster University,Canada,26403,29.0,20%,56 : 44,65.1,42.7,51.1,94.6,89.9,84.7,43.2609,-79.9192,North America,14786,11617
+86,University of Tübingen,Germany,20620,27.5,13%,59 : 41,64.9,51.1,58.2,84.5,79.9,64.1,48.5362,9.0367,Europe,12166,8454
+88,University of Adelaide,Australia,23102,32.8,32%,49 : 51,64.7,42.7,51.8,92.2,65.3,93.6,-34.919159,138.60414,Oceania,11320,11782
+89,University of Bonn,Germany,27210,47.5,17%,56 : 44,64.6,51.6,56.1,86.0,55.0,68.7,50.7268,7.0865,Europe,15238,11972
+90,Sorbonne University,France,41443,13.9,21%,59 : 41,64.5,58.7,58.3,76.6,40.0,72.3,48.84249663,2.339331976,Europe,24451,16992
+91,Free University of Berlin,Germany,26497,41.9,23%,62 : 38,64.2,54.2,62.4,74.8,41.7,76.4,52.4543,13.2935,Europe,16428,10069
+93,Université Paris-Saclay,France,44443,14.9,19%,49 : 51,63.9,56.7,55.2,79.1,54.6,69.7,48.7099,2.1667,Europe,21777,22666
+94,University of Bern,Switzerland,11728,17.2,17%,58 : 42,63.7,46.0,46.5,90.7,86.3,88.2,46.9502,7.4369,Europe,6802,4926
+95,"University of California, Irvine",United States,36655,16.9,28%,52 : 48,63.6,43.5,51.6,93.6,59.4,73.2,33.6424,-117.8417,North America,19061,17594
+95,Nanjing University,China,36426,16.5,8%,54 : 46,63.6,58.4,58.2,74.3,87.3,55.2,32.0568,118.779,Asia,19670,16756
+98,Vanderbilt University,United States,12696,3.8,15%,55 : 45,63.5,49.5,47.5,96.5,66.7,50.6,36.1447,-86.8027,North America,6983,5713
+99,City University of Hong Kong,Hong Kong,9099,12.1,62%,54 : 46,63.4,47.2,53.0,79.9,76.6,99.6,22.337,114.1727,Asia,4913,4186

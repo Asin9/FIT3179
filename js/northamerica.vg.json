@@ -1,13 +1,13 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
+    "width": "container",
     "height": 450,
     "title": "Top 100 Global Universities",
-    "projection": {
-      "type": "mercator",
-      "center": [-100, 40], 
-      "scale": 400 
-    },
+      "projection": {
+        "type": "mercator",
+        "center": [-100, 40], 
+        "scale": 400 
+      },
     "layer": [
       {
         "data": {
@@ -18,18 +18,26 @@
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100.csv_with_continent__fix.csv"
+          "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_6.csv"
         },
         "transform": [
           { "calculate": "datum.University", "as": "Rank" },
           { "calculate": "datum.Name", "as": "University Name" },
           { "calculate": "datum.Location", "as": "Country" },
-          { "calculate": "datum.Nostudent", "as": "Total Students" }
+          { "calculate": "datum.Nostudent", "as": "Total Students" },
+          {
+            "calculate": "format(datum.Longitude + (random() - 0.5) * 0.1, '.4f')", 
+            "as": "FormattedLongitude"
+          },
+          {
+            "calculate": "format(datum.Latitude + (random() - 0.5) * 0.1, '.4f')",   
+            "as": "FormattedLatitude"
+          }
         ],
-        "mark": { "type": "circle" },
+        "mark": "point",  
         "encoding": {
-          "longitude": { "field": "Longitude", "type": "quantitative" },
-          "latitude": { "field": "Latitude", "type": "quantitative" },
+          "longitude": { "field": "Longitude", "type": "quantitative" }, 
+          "latitude": { "field": "Latitude", "type": "quantitative" },    
           "tooltip": [
             { "field": "University Name", "type": "nominal" },
             { "field": "Country", "type": "nominal" },

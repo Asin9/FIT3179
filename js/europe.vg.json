@@ -3,11 +3,11 @@
     "width": "container",
     "height": 450,
     "title": "Top 100 Global Universities",
-    "projection": {
-      "type": "mercator",
-      "center": [100, 20], 
-      "scale": 400
-    },
+  "projection": {
+    "type": "mercator",
+    "center": [10, 50], 
+    "scale": 600 
+  },
     "layer": [
       {
         "data": {
@@ -57,4 +57,3 @@
       }
     ]
   }
-  

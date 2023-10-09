@@ -5,8 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
   
     // Define file paths for Vega-Lite specifications
     const specificationPaths = {
-      visualization1: 'js/interactive_scattplot.vg.json',
-      visualization2: 'js/world_symbol.vg.json'
+      visualization1: 'js/world_symbol.vg.json',
+      visualization2: 'js/europe.vg.json',
+      visualization3: 'js/northamerica.vg.json',
+      visualization4: 'js/asia.vg.json',
+      visualization5: 'js/Aus.vg.json',
+
       // Add more file paths for other views if needed
     };
   
