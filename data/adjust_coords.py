@@ -9,8 +9,8 @@ df = pd.read_csv(input_csv_file)
 
 # Function to apply latitude and longitude adjustments
 def adjust_coordinates(row):
-    random_lat_adjustment = (random.random() - 0.5) * 5
-    random_lon_adjustment = (random.random() - 0.5) * 5
+    random_lat_adjustment = (random.random() - 0.5) * 2
+    random_lon_adjustment = (random.random() - 0.5) * 2
     row['Latitude'] += random_lat_adjustment
     row['Longitude'] += random_lon_adjustment
     return row
