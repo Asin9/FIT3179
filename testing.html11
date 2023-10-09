@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vega-Lite Dropdown Switch</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+  <!-- Import vega-embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <label for="visualization-select">Select Visualization:</label>
+  <select id="visualization-select">
+    <option value="visualization1">Visualization 1</option>
+    <option value="visualization2">Visualization 2</option>
+    <!-- Add more options as needed -->
+  </select>
+  <div id="vega-embed-container"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
