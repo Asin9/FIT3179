@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 550,
     "height": 500,
-    "title": "University Overall Score vs Students per Staff",
+    "title": "University Rank vs Students per Staff",
     "data": {
       "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100.csv_with_continent__fix.csv"
     },
