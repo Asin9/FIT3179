@@ -40,16 +40,15 @@
   ],
   "encoding": {
     "x": {
-      "field": "Population",
-      "type": "quantitative",
-      "title": "Students per Staff",
-      "scale": {"domain": [60,0]}
+      "field": "University",
+      "type": "nominal",
+      "title": "University",
+      "axis": {"labelAngle": -45, "labelAlign": "right"}
     },
     "y": {
-      "field": "Score",
+      "field": "Nostudentperstaff",
       "type": "quantitative",
-      "title": "Overall Score",
-      "scale": {"type": "linear", "base": 10, "domain": [60,100]}
+      "title": "Students per Staff"
     },
     "color": {
       "field": "Continent",
@@ -61,6 +60,7 @@
       "legend": {"title": "Continent"}
     }
   },
+  
   "layer": [
     {
       "mark": "circle",

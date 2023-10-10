@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 100,
+  "height": 100,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/total_gender_students_.csv"
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  },
+  "mark": "arc",
+  "transform": [
+    { "calculate": "datum.Total_Students", "as": "Students" }
+  ],
+  "encoding": {
+    "theta": { "field": "Students", "type": "quantitative" },
+    "color": {
+      "field": "Gender",
+      "type": "nominal",
+      "scale": { "domain": ["Male", "Female"], "range": ["darkblue", "crimson"] },
+      "legend": { "title": "Gender" } 
+    },
+    "tooltip": [
+      { "field": "Gender", "type": "nominal" },
+      { "field": "Students", "type": "quantitative" },
+      { "field": "Percentage", "type": "nominal" }
+    ]
+  },
+  "title": "Gender Distribution of Top 100 Universities"
+}

@@ -2,11 +2,18 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": "container",
     "height": 450,
-    "title": "Top 100 Global Universities",
+    "title": "Top 100 Global Universities - Asia",
     "projection": {
       "type": "mercator",
       "center": [100, 20], 
       "scale": 400
+    },
+    "config": {
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
+      }
     },
     "layer": [
       {
