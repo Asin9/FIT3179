@@ -12,8 +12,8 @@
   },
   "projection": {
     "type": "mercator",
-    "center": [0, 20], 
-    "scale": 100
+    "center": [15, 15], 
+    "scale": 110
   },
   "layer": [
     {
@@ -41,7 +41,7 @@
           "as": "FormattedLatitude"
         }
       ],
-      "mark": "point",  
+      "mark": "circle",  
       "encoding": {
         "longitude": { "field": "Longitude", "type": "quantitative" }, 
         "latitude": { "field": "Latitude", "type": "quantitative" },    
@@ -56,8 +56,8 @@
           "type": "quantitative",
           "scale": {
             "type": "linear",
-            "domain": [1, 100],
-            "range": ["darkblue", "lightblue"]
+            "domain": [100, 1],
+            "range": ["lightblue", "#00004D"]
           }
         }
         
