@@ -64,5 +64,6 @@
 
     "config": {
       "legend": {"orient": "bottom", "layout": {"bottom": {"anchor": "middle"}}}
+    }
   }
   
