@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the CSV data into a Pandas DataFrame
-df = pd.read_csv('data/top_100_with_gender_students_rounded.csv')
+df = pd.read_csv('data/top_100_with_gender_students_decimal.csv')
 # Select only numeric columns for correlation calculation
 numeric_columns = df.select_dtypes(include=['number'])
 

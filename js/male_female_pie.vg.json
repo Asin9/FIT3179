@@ -26,7 +26,7 @@
     },
     "tooltip": [
       { "field": "Gender", "type": "nominal" },
-      { "field": "Students", "type": "quantitative" },
+      { "field": "Students", "type": "quantitative", "format": ","},
       { "field": "Percentage", "type": "nominal" }
     ]
   },

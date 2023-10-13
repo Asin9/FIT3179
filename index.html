@@ -1,27 +1,235 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <title>Top 100 Global Universities: 2023</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
-  
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+  <!-- Import vega-embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 
+  <!-- custom style -->
+  <style>
+    * {
+      font-family: 'Oxygen', sans-serif;
+      line-height: 1.5;
+    }
 
+    h1 {
+      font-weight: 900;
+
+    }
+    
+
+    body {
+      background-color: lightgray;
+      background-image: url('data/college-graduation-cap-seamless-pattern-student-celebration-hat-endless-background-template-mortar_607579-215.jpg');
+      background-repeat: repeat;
+    }
+
+    .page {
+  width: 750px;
+  background-color: #f4f2f3;
+  margin: auto;
+  padding: 70px;
+  padding-top: 35px;
+
+}
+
+    .vis-container {
+      width: 100%;
+    }
+
+    .description h2,
+    h1 {
+      margin-top: 10px;
+    }
+
+    .description-right {
+      padding-left: 10px;
+      
+    }
+
+    .description-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paragraph {
+    flex: 1;
+    padding: 10px;
+}
+
+  .pure-g {
+    margin-bottom: 25px;
+    background-color: white;
+    border-radius: 10px; 
+    padding: 10px; 
+  }
+
+  .center-h1 {
+    text-align: center; 
+    color: #b09991;
+    align-items: center;
+  }
+
+    .small-font {
+      font-size: 13px;
+    }
+    .left-h2 {
+    text-align: left; 
+    color: #b09991;
+  }
+  </style>
 </head>
+
 <body>
-  
-<div id="choropleth_map"></div>
 
-<script type="text/javascript">
+  <div class="page">
 
-  var spec2 = "js/week 9 homework.vg.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
+    <!-- Title and subtitle -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div class="center-h1">
+          <h1>Top 100 Global Universities: 2023</h1>
+        </div>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim ultricies massa vitae vehicula. Maecenas commodo, lectus lobortis fringilla lobortis, diam est scelerisque felis, vitae luctus justo massa vel libero. Praesent gravida ac tortor a ornare. Morbi dapibus bibendum ligula, nec malesuada diam lacinia quis. Duis id rhoncus est. Duis sed nibh dictum, efficitur dolor eget, vehicula velit. Pellentesque ac orci vel ante tempor eleifend vel vel elit. Nam a.
 
+         </p>
+          
+    </div>
+    <!-- end pure grid group -->
+  </div>
+
+
+
+
+    <!-- Caption/small text -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div class="left-h2">
+          <h2>Locations</h2>
+        </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div id="vega-embed-container"></div>
+        <script src="js/script.js"></script>
+      <label for="visualization-select">Select Map:</label>
+      <select id="visualization-select">
+        <option value="visualization1">World</option>
+        <option value="visualization2">Europe</option>
+        <option value="visualization3">North America</option>
+        <option value="visualization4">Asia</option>
+        <option value="visualization5">Australia</option>
+        
+        <!-- Add more options as needed -->
+      </select>
+      </div>
+    </div>
+    <div class="description-left">
+      <div class="paragraph">
+
+       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim ultricies massa vitae vehicula. Maecenas commodo, lectus lobortis fringilla lobortis, diam est scelerisque felis, vitae luctus justo massa vel libero. Praesent gravida ac tortor a ornare. Morbi dapibus bibendum ligula, nec malesuada diam lacinia quis. Duis id rhoncus est. Duis sed nibh dictum, efficitur dolor eget, vehicula velit. Pellentesque ac orci vel ante tempor eleifend vel vel elit. Nam a. ac tortor a ornare. Morbi dapibus bibendum ligula, nec malesuada diam lacinia quis. Duis id rhoncus est. Duis sed nibh dictum, efficitur dolor eget, vehicula velit. Pellentesque ac orci vel ante tempor eleifend vel vel elit. Nam a.           </p>
+      </div>
+      <div class="paragraph">
+        <p>ac tortor a ornare. Morbi dapibus bibendum ligula, nec malesuada diam lacinia quis. Duis id rhoncus est. Duis sed nibh dictum, efficitur dolor eget, vehicula velit. Pellentesque ac orci vel ante tempor eleifend vel vel elit. Nam a.    </p> 
+        <div class="pure-u-1-2">
+          <div id="vis3" class="vis-container"></div>
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+
+
+
+    <!-- More text -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div class="left-h2">
+          <h2>Students</h2>
+        </div>
+        <div class="description-left">
+          
+          <div class="paragraph">
+            <div id = "center-h1">
+            <div class="pure-u-1-2">
+              <div id="vis1" class="vis-container"></div>
+            </div>
+          </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla a purus at tempor. Nullam sed nunc id massa sodales gravida. Duis id condimentum metus, eleifend placerat leo. Donec rhoncus</p>
+          </div>
+          <div class="paragraph">
+              <p>nibh sit amet ipsum consequat, at porta felis maximus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sed velit consectetur, fringilla ex posuere, ullamcorper. 
+                nibh sit amet ipsum consequat, at porta felis maximus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sed velit consectetur, fringilla ex posuere, ullamcorper. Quisque sed velit consectetur, fringilla ex posuere, ullamcorper.
+              </p>
+          </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis2" class="vis-container"></div>
+      </div>
+    </div>
+  </div>
+
+       <!-- More text -->
+       <div class="pure-g">
+        <div class="pure-u-1-1">
+          <div class="left-h2">
+            <h2>Teachers</h2>
+          </div>
+          
+      </div>
+    </div>
+
+           <!-- More text -->
+           <div class="pure-g">
+            <div class="pure-u-1-1">
+              <div class="left-h2">
+                <h2>Industry and Research</h2>
+              </div>
+              
+          </div>
+        </div>
+    
+
+
+
+  <script type="text/javascript">
+    var specVis1 = "js/male_female_pie.vg.json";
+    var specVis2 = "js/rank_international_student_to_overallscore.json";
+    var specVis3 = "js/avg_score_country_bar.vg.json";
+    var specVis4 = "./Visualisations/choroplethMetroMelb.json";
+    var specVis5 = "./Visualisations/dotplot.json";
+
+    vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
 </body>
+
 </html>
