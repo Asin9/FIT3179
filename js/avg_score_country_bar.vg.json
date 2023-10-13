@@ -1,35 +1,48 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Average University Score (Out of 100)",
-    "width": 200,
-    "height": 200,
-    "data": {
-      "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/Location_Average_Scores_top_100.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Top 10 Countries with Universities in Top 100",
+  "width": 200,
+  "height": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_6.csv"
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {"op": "count", "as": "count"}
+      ],
+      "groupby": ["Location","Continent"]
     },
-      "transform": [
-      {
-        "window": [
-          { "op": "rank", "as": "rank" }
-        ],
-        "sort": [{ "field": "OverAllScore", "order": "descending" }]
-      },
-      {
-        "filter": "datum.rank <= 30"
-      }
-    ],
-    "mark": "bar",
-    "encoding": {
-      "x": {
-        "field": "OverAllScore",
-        "type": "quantitative",
-        "title": "Average University Score"
-      },
-      "y": {
-        "field": "Location",
-        "type": "nominal",
-        "title": "Country",
-        "sort": "-x"
-      }
+    {
+      "window": [
+        {"op": "rank", "as": "rank"}
+      ],
+      "sort": [{"field": "count", "order": "descending"}]
+    },
+    {
+      "filter": "datum.rank <= 10"
     }
-  }
-  
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Number of Universities"
+      
+    },
+    "y": {
+      "field": "Location",
+      "type": "nominal",
+      "title": "Country",
+      "sort": "-x"
+    },
+          "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Europe", "North America", "Asia", "Oceania"],
+            "range": ["#e41a1c", "#984ea3", "#377eb8", "#a65628"]
+          },
+          "legend": {"title": "Continent"}}
+}}

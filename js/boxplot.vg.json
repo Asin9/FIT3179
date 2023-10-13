@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Box Plot of Research Scores by Country",
+    "data": {
+      "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_6.csv"
+    },
+    "mark": "boxplot",
+    "encoding": {
+      "x": {
+        "field": "Location",
+        "type": "nominal",
+        "title": "Country"
+      },
+      "y": {
+        "field": "ResearchScore",
+        "type": "quantitative",
+        "title": "Research Score",
+        "scale": {"domain": [40, 100]}
+        
+      },
+                    "color": {
+            "field": "Continent",
+            "type": "nominal",
+            "scale": {
+              "domain": ["Europe", "North America", "Asia", "Oceania"],
+              "range": ["#e41a1c", "#984ea3", "#377eb8", "#a65628"]
+            },
+            "legend": {"title": "Continent"}},
+      "tooltip": [
+        {"field": "Location", "type": "nominal"},
+        {"field": "ResearchScore", "type": "quantitative"}
+  
+      ]
+    },
+    "width": 270,
+    "height": 300,
+
+    "config": {
+      "legend": {"orient": "bottom", "layout": {"bottom": {"anchor": "middle"}}}
+    }
+  }
+  

@@ -88,6 +88,9 @@
     text-align: left; 
     color: #b09991;
   }
+  .right-h2 {
+    text-align: right; 
+  }
   </style>
 </head>
 
@@ -180,28 +183,61 @@
     </div>
   </div>
 
-       <!-- More text -->
-       <div class="pure-g">
+
+
+
+      <!-- More text -->
+      <div class="pure-g">
         <div class="pure-u-1-1">
           <div class="left-h2">
-            <h2>Teachers</h2>
+            <h2>Teaching and Research</h2>
           </div>
           <div class="description-left">
-          
+            
             <div class="paragraph">
               <div id = "center-h1">
-              <div class="pure-u-1-2">
-                <div id="vis4" class="vis-container"></div>
+            </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla a purus at tempor. Nullam sed nunc id massa sodales gravida. Duis id condimentum metus, eleifend placerat leo. Donec rhoncus</p>
+            </div>
+            <div class="paragraph">
+              <div class="pure-g">
+                <div class="pure-u-1-1">
+                  <div id="vega-embed-container-2"></div>
+                  <script src="js/script2.js"></script>
+                <label for="visualization-select-2">Select Filter:</label>
+                <select id="visualization-select-2">
+                  <option value="visualization6">Show All</option>
+                  <option value="visualization7">Europe</option>
+                  <option value="visualization8">North America</option>
+                  <option value="visualization9">Asia</option>
+                  <option value="visualization10">Oceania</option>
+                  
+                  <!-- Add more options as needed -->
+                </select>
+                </div>
               </div>
             </div>
+        </div>
+        <div class="description-right">
+          
+          <div class="paragraph">
+            <div id = "right-h2">
+            <div class="pure-u-1-2">
+              <div id="vis5" class="vis-container"></div>
+            </div>
+          </div>
       </div>
     </div>
+  </div>
+</div>
+   
+
 
            <!-- More text -->
            <div class="pure-g">
             <div class="pure-u-1-1">
               <div class="left-h2">
-                <h2>Industry and Research</h2>
+                <h2>Industry and International Outlook</h2>
               </div>
               
           </div>
@@ -215,7 +251,7 @@
     var specVis2 = "js/rank_international_student_to_overallscore.json";
     var specVis3 = "js/avg_score_country_bar.vg.json";
     var specVis4 = "js/global reg line.vg.json"
-    var specVis5 = "./Visualisations/dotplot.json";
+    var specVis5 = "js/boxplot.vg.json";
 
     vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view

@@ -22,7 +22,7 @@
       "field": "Gender",
       "type": "nominal",
       "scale": { "domain": ["Male", "Female"], "range": ["darkblue", "crimson"] },
-      "legend": { "title": "Gender" } 
+      "legend": { "title": "" } 
     },
     "tooltip": [
       { "field": "Gender", "type": "nominal" },
