@@ -29,7 +29,6 @@
       "field": "count",
       "type": "quantitative",
       "title": "Number of Universities"
-      
     },
     "y": {
       "field": "Location",
@@ -37,12 +36,22 @@
       "title": "Country",
       "sort": "-x"
     },
-          "color": {
-          "field": "Continent",
-          "type": "nominal",
-          "scale": {
-            "domain": ["Europe", "North America", "Asia", "Oceania"],
-            "range": ["#e41a1c", "#984ea3", "#377eb8", "#a65628"]
-          },
-          "legend": {"title": "Continent"}}
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Europe", "North America", "Asia", "Oceania"],
+        "range": ["#e41a1c", "#984ea3", "#377eb8", "#a65628"]
+      },
+      "legend": {"title": "Continent"}
+    },
+    "tooltip": [
+      {"field": "Location", "type": "nominal", "title": "Country"},
+      {"field": "count", "type": "quantitative", "title": "Number of Universities"},
+      {"field": "Continent", "type": "nominal", "title": "Continent"}
+    ]
+  },
+  "config": {
+    "legend": {"orient": "bottom", "layout": {"bottom": {"anchor": "middle"}}
+  }
 }}

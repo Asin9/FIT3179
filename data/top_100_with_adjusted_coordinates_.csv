@@ -1,0 +1,101 @@
+University,Name,Location,Nostudent,Nostudentperstaff,InternationalStudent,FemaleMaleRatio,OverAllScore,TeachingScore,ResearchScore,CitationsScore,IndustryIncomeScore,InternationalOutlookScore,Latitude,Longitude,Continent
+1,University of Oxford,England,20965,10.6,42%,48:52:00,96.4,92.3,99.7,99,74.9,96.2,51.73224253,-1.307227324,Europe
+2,Harvard University,United States,21887,9.6,25%,50:50:00,95.2,94.8,99,99.3,49.5,80.5,42.3665808,-71.07608568,North America
+3,University of Cambridge,England,20185,11.3,39%,47:53:00,94.8,90.9,99.5,97,54.2,95.8,52.19507626,0.074272913,Europe
+3,Stanford University,United States,16164,7.1,24%,46:54:00,94.8,94.2,96.7,99.8,65,79.8,37.46715693,-122.1588485,North America
+5,Massachusetts Institute of Technology,United States,11415,8.2,33%,40 : 60,94.2,90.7,93.6,99.8,90.9,89.3,42.324589,-71.08890704,North America
+6,California Institute of Technology,United States,2237,6.2,34%,37 : 63,94.1,90.9,97,97.3,89.8,83.6,34.16229994,-118.1128928,North America
+7,Princeton University,United States,8279,8,23%,46:54:00,92.4,87.6,95.9,99.1,66,80.3,40.37657326,-74.62025795,North America
+8,"University of California, Berkeley",United States,40921,18.4,24%,52:48:00,92.1,86.4,95.8,99,76.8,78.4,37.89358,-122.2226186,North America
+9,Yale University,United States,13482,5.9,21%,52:48:00,91.4,92.6,92.7,97,55,70.9,41.33040044,-72.90645106,North America
+10,Imperial College London,England,18545,11.2,61%,40 : 60,90.4,82.8,90.8,98.3,59.8,97.5,51.45894198,-0.16234177,Europe
+11,Columbia University,United States,21781,4.5,38%,,89.4,89.4,87.7,97.1,44.8,79.9,40.851265,-73.98261061,North America
+11,ETH Zurich,Switzerland,21665,14.8,41%,33 : 67,89.4,82.6,95.4,90.7,59.1,97.7,47.39240679,8.577394563,Europe
+13,The University of Chicago,United States,15366,6,36%,47:53:00,88.9,86.5,88.8,97.7,56.2,74.2,41.80111231,-87.59743773,North America
+14,University of Pennsylvania,United States,21453,6.3,23%,53:47:00,88.8,86,88.8,97,75.8,71.5,39.952792,-75.19256372,North America
+15,Johns Hopkins University,United States,17584,4.7,29%,53:47:00,88.3,79.4,91.5,97,89.5,75.3,39.30857353,-76.60494017,North America
+16,Tsinghua University,China,38324,11.6,10%,,88.2,90.1,97.4,88,100,40.3,39.99307731,116.3007272,Asia
+17,Peking University,China,31994,10.3,19%,,88.1,92.5,96.7,80.4,91.8,65,39.95758124,116.3086164,Asia
+18,University of Toronto,Canada,77468,25.8,26%,56:44:00,87.4,77.3,93.3,92.8,65.5,89.7,43.67664412,-79.4328455,North America
+19,National University of Singapore,Singapore,32337,19.8,25%,51:49:00,87.1,76.4,93,90.2,87,94,1.269359171,103.7337593,Asia
+20,Cornell University,United States,24027,10.3,26%,51:49:00,85.9,80.2,86.1,97.3,40.4,76.9,42.45996156,-76.42701986,North America
+21,"University of California, Los Angeles",United States,42434,9.7,16%,56:44:00,85.8,80.4,88.9,95.4,58.8,65,34.08241669,-118.4293974,North America
+22,UCL,England,36790,10.3,60%,59:41:00,85.7,74.5,85.4,97.9,44.5,96.7,51.48459789,-0.116048069,Europe
+23,University of Michigan-Ann Arbor,United States,45912,8.2,17%,50:50:00,82.9,79.3,84.6,93.6,48.7,59.2,42.24829965,-83.70215318,North America
+24,New York University,United States,36337,9.8,42%,57:43:00,82.7,74.2,84,95,44.6,74.7,40.77043342,-74.01237168,North America
+25,Duke University,United States,16091,4.2,24%,52:48:00,82.6,78.1,76.2,95.7,99.6,68,35.96083887,-78.94774572,North America
+26,Northwestern University,United States,19175,13.2,20%,51:49:00,82.1,71.7,80.7,97.5,85,67,42.0289816,-87.68327713,North America
+26,University of Washington,United States,47727,10.8,18%,55:45:00,82.1,71.6,82.8,98.9,53.9,63,47.65419787,-122.3563124,North America
+28,Carnegie Mellon University,United States,14305,12.9,47%,44:56:00,81.1,65.4,81.8,98.7,55.2,80.1,40.42108999,-79.9805537,North America
+29,University of Edinburgh,Scotland,32845,11.8,47%,62:38:00,79.8,66.9,74.5,97.1,40.9,95.6,55.9376719,-3.208925166,Europe
+30,Technical University of Munich,Germany,33960,40.6,36%,37 : 63,79.3,69.8,82.2,84.5,100,77.7,48.19536313,11.59216975,Europe
+31,University of Hong Kong,Hong Kong,18087,18.2,43%,54:46:00,78.5,65.6,74.1,92.4,60.6,98.7,22.31284309,114.1685119,Asia
+32,"University of California, San Diego",United States,37030,11.3,28%,48:52:00,78.1,60.2,77.2,98.2,93,67.8,32.89789525,-117.2164982,North America
+33,LMU Munich,Germany,35003,34.2,19%,61:39:00,77.7,67.3,78.3,87.4,100,70.5,48.12913177,11.57083813,Europe
+34,University of Melbourne,Australia,49588,23.8,47%,58:42:00,77.6,67.1,75.9,85.8,78.1,93.6,-37.80565482,144.9899232,Oceania
+35,King’s College London,England,28965,11.8,52%,63:37:00,77.1,58,72.9,98.2,45.6,96.1,51.55632013,-0.096295099,Europe
+36,"Nanyang Technological University, Singapore",Singapore,24651,15.1,25%,48:52:00,77,60.9,77.9,87.2,84.5,94.5,1.300686875,103.6775886,Asia
+37,London School of Economics and Political Science,England,11120,11.9,73%,55:45:00,76.5,59.2,74.3,95.1,37.8,92.8,51.5081048,-0.127319396,Europe
+38,Georgia Institute of Technology,United States,28826,24.7,40%,33 : 67,76,60.2,75.9,91.4,64.9,81.2,33.76878103,-84.43460723,North America
+39,The University of Tokyo,Japan,26112,10.5,15%,,75.9,88.1,91.4,55.5,86.7,43.3,35.73115063,139.7975953,Asia
+40,University of British Columbia,Canada,56452,18.9,34%,55:45:00,75.7,62.9,73.1,88.8,47.9,94.8,49.28795212,-123.2326856,North America
+41,École Polytechnique Fédérale de Lausanne,Switzerland,11641,12.3,62%,30 : 70,75.4,65.6,70.7,84.5,71.7,98,46.5653687,6.57449949,Europe
+42,KU Leuven,Belgium,47663,36.5,18%,51:49:00,74.6,59.7,74.9,86.7,99.2,76.8,50.90831909,4.743537791,Europe
+43,Universität Heidelberg,Germany,19347,13.5,21%,55:45:00,74.1,67.2,61.5,96,55.7,71.2,49.36319633,8.751075058,Europe
+44,Monash University,Australia,58725,42.5,41%,57:43:00,73.6,56.9,68.7,90.4,78.4,91,-37.96004954,145.1090249,Oceania
+45,Chinese University of Hong Kong,Hong Kong,18468,19,21%,,73.2,59.1,61.1,95.7,60.9,92.5,22.43636391,114.205753,Asia
+46,McGill University,Canada,32309,12.5,30%,60:40:00,73,62,72.4,82.5,43.5,91,45.51957153,-73.54714223,North America
+47,Paris Sciences et Lettres - PSL Research University Paris,France,16218,15,22%,51:49:00,72.9,68.2,73.5,75.5,78.8,76.3,48.85596787,2.362214956,Europe
+48,University of Illinois at Urbana-Champaign,United States,48674,17.4,22%,48:52:00,72.7,67.1,78.9,78.1,50.1,56.2,40.14653266,-88.25178871,North America
+49,Karolinska Institute,Sweden,8021,9.9,27%,70:30:00,72.4,51.1,68.8,94,66.4,87.3,59.37940895,18.04074569,Europe
+50,University of Texas at Austin,United States,49171,17.4,10%,53:47:00,72.3,66.2,73.1,87.5,51.3,40.1,30.27779372,-97.76638104,North America
+51,Fudan University,China,36318,11.9,9%,52:48:00,72,71.8,75.8,74.5,77.3,45.2,31.25016433,121.4588426,Asia
+52,Shanghai Jiao Tong University,China,37478,11.5,8%,42:58:00,71.2,75.3,82.9,59.9,100,43.7,31.02061371,121.4742782,Asia
+53,The University of Queensland,Australia,41372,34.2,41%,55:45:00,71.1,55.9,66.5,84.3,82,93.2,-27.50965183,152.9680663,Oceania
+54,University of Manchester,England,37035,14.2,44%,55:45:00,70.9,54.5,63.7,91.3,45.3,92.7,53.41854211,-2.283660851,Europe
+54,The University of Sydney,Australia,45853,19,45%,58:42:00,70.9,53.1,65.8,88.5,73.2,90.6,-33.91671504,151.2214425,Oceania
+56,Seoul National University,South Korea,26209,15.1,10%,,70.8,75.2,76.2,67.6,96.6,35.9,37.50290207,126.9152312,Asia
+57,Washington University in St Louis,United States,14420,7.8,24%,53:47:00,70.6,60.3,56.8,98.2,47.5,64,38.61576899,-90.26795279,North America
+58,The Hong Kong University of Science and Technology,Hong Kong,9864,21,32%,,70.5,51.4,63.4,87.7,95,97.7,22.37788722,114.2216278,Asia
+59,Wageningen University & Research,Netherlands,15404,18.6,27%,55:45:00,70.3,50.4,60.2,93.2,100,88.8,51.97310992,5.682052521,Europe
+60,University of Amsterdam,Netherlands,29157,14.5,32%,59:41:00,69.6,48,64.1,93.3,44.4,91.9,52.34904372,4.974778698,Europe
+61,Brown University,United States,10037,10.1,21%,,69.3,64.5,58,89.5,39,63.3,41.78955605,-71.37341483,North America
+62,Australian National University,Australia,16758,14.6,51%,52:48:00,69,51.3,69.2,81.8,45.6,96,-35.26456834,149.0967082,Oceania
+63,"University of California, Davis",United States,37639,13.1,18%,60:40:00,68.5,59.7,66.3,80.9,52.4,68.7,38.53203689,-121.7638845,North America
+64,"University of California, Santa Barbara",United States,25860,28.5,20%,54:46:00,68.4,44.6,61.5,96.2,80.1,76,34.3724347,-119.8202659,North America
+65,University of Southern California,United States,40549,12.6,22%,49:51:00,68.3,58.9,58.6,90.4,43.8,63.7,34.01374783,-118.2903833,North America
+66,Utrecht University,Netherlands,32532,17.1,13%,62:38:00,68.2,44.3,66,91.2,72.7,78.8,52.12326517,5.15235955,Europe
+67,Zhejiang University,China,46124,12,16%,,68.1,67.3,74.8,62.8,100,55.1,30.32589338,120.1204304,Asia
+68,Kyoto University,Japan,22269,9.2,12%,25 : 75,68,77.5,79.1,52.3,88.6,40.5,35.00988147,135.7873655,Asia
+69,University of North Carolina at Chapel Hill,United States,31080,7.9,8%,59:41:00,67.8,58.9,59.7,93.3,46,41.7,35.91057331,-79.05386233,North America
+70,Delft University of Technology,Netherlands,20299,16.1,31%,31 : 69,67.7,58.8,76.4,59.1,93.4,94.2,52.04635465,4.417424123,Europe
+71,Boston University,United States,27243,10.8,31%,59:41:00,67.5,55.9,56.1,92.9,41.1,65.9,42.38102588,-71.11909684,North America
+71,UNSW Sydney,Australia,45133,36.3,40%,47:53:00,67.5,51.1,59,85.9,63.5,95.1,-33.90267001,151.2129867,Oceania
+73,Charité - Universitätsmedizin Berlin,Germany,8429,18,21%,64:36:00,67.2,48.5,52.2,98.8,87.1,69.3,52.47742742,13.38287723,Europe
+74,University of Science and Technology of China,China,18573,8.1,6%,,67.1,65,64.9,78.8,69.4,36.9,31.81937057,117.2746967,Asia
+75,University of Groningen,Netherlands,30009,24.4,28%,52:48:00,66.6,45.4,57.6,90.4,75.8,89.8,53.25686595,6.529241308,Europe
+76,University of Bristol,England,25680,14.6,31%,56:44:00,66.5,43.8,53.4,98.6,43.5,89.4,51.46456207,-2.560897777,Europe
+77,Leiden University,Netherlands,33648,19.3,20%,60:40:00,66.4,43.2,64.4,86.6,68.4,85.4,52.20688001,4.509857243,Europe
+78,Yonsei University (Seoul campus),South Korea,19481,14.7,17%,50:50:00,66.3,67,68.9,63.9,94.8,52.8,37.5378409,126.9711331,Asia
+79,Hong Kong Polytechnic University,Hong Kong,19046,28.9,30%,51:49:00,65.8,46.6,57,86.7,56,97.6,22.34684591,114.1369215,Asia
+80,Erasmus University Rotterdam,Netherlands,31668,33.9,22%,53:47:00,65.7,38.6,57.1,95.6,64.4,89.7,51.90304177,4.499893026,Europe
+81,University of Wisconsin-Madison,United States,40701,10,14%,,65.5,59.7,62.9,78.7,48.4,51.8,43.02664732,-89.42027898,North America
+82,Emory University,United States,13190,4.2,20%,60:40:00,65.3,54.8,46,98,48.6,59.8,33.75329908,-84.31651214,North America
+82,University of Glasgow,Scotland,28540,13.5,41%,59:41:00,65.3,43.3,50.8,96.5,41.9,93.8,55.90116596,-4.256737002,Europe
+82,University of Zurich,Switzerland,25003,13.7,22%,56:44:00,65.3,51.5,50.7,87.5,57.6,93,47.32734916,8.541997999,Europe
+85,McMaster University,Canada,26403,29,20%,56:44:00,65.1,42.7,51.1,94.6,89.9,84.7,43.23922517,-79.89749787,North America
+86,Humboldt University of Berlin,Germany,34399,53.2,17%,,64.9,55.2,64.3,75.6,42.8,70.5,52.49461133,13.43920289,Europe
+86,University of Tübingen,Germany,20620,27.5,13%,59:41:00,64.9,51.1,58.2,84.5,79.9,64.1,48.52731523,9.050803658,Europe
+88,University of Adelaide,Australia,23102,32.8,32%,49:51:00,64.7,42.7,51.8,92.2,65.3,93.6,-34.96863648,138.6408842,Oceania
+89,University of Bonn,Germany,27210,47.5,17%,56:44:00,64.6,51.6,56.1,86,55,68.7,50.74002168,7.091572524,Europe
+90,Sorbonne University,France,41443,13.9,21%,59:41:00,64.5,58.7,58.3,76.6,40,72.3,48.8026042,2.298556642,Europe
+91,Free University of Berlin,Germany,26497,41.9,23%,62:38:00,64.2,54.2,62.4,74.8,41.7,76.4,52.43978385,13.30579982,Europe
+91,Korea Advanced Institute of Science and Technology (KAIST),South Korea,9946,10.7,9%,0.929861111,64.2,64.5,66,65.7,100,38.2,36.41393091,127.3267349,Asia
+93,Université Paris-Saclay,France,44443,14.9,19%,49:51:00,63.9,56.7,55.2,79.1,54.6,69.7,48.74984754,2.190781792,Europe
+94,University of Bern,Switzerland,11728,17.2,17%,58:42:00,63.7,46,46.5,90.7,86.3,88.2,46.92947467,7.395292087,Europe
+95,"University of California, Irvine",United States,36655,16.9,28%,52:48:00,63.6,43.5,51.6,93.6,59.4,73.2,33.59924687,-117.7945617,North America
+95,Institut Polytechnique de Paris,France,5999,6.7,41%,24 : 76,63.6,58.5,58.8,64.8,72.7,95.6,48.74989046,2.190273913,Europe
+95,Nanjing University,China,36426,16.5,8%,54:46:00,63.6,58.4,58.2,74.3,87.3,55.2,32.04369046,118.7550814,Asia
+98,Vanderbilt University,United States,12696,3.8,15%,55:45:00,63.5,49.5,47.5,96.5,66.7,50.6,36.12649695,-86.82371962,North America
+99,City University of Hong Kong,Hong Kong,9099,12.1,62%,54:46:00,63.4,47.2,53,79.9,76.6,99.6,22.38213287,114.2002059,Asia
+99,RWTH Aachen University,Germany,39738,50,28%,33 : 67,63.4,56.8,64.5,66.1,93.8,65.1,50.81008025,6.081110464,Europe

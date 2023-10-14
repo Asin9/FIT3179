@@ -1,0 +1,31 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Stacked Area Chart with Tooltip",
+    "data": {
+      "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/amount_in_100.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {"fold": ["United Kingdom", "United States", "Switzerland", "China", "Canada", "Singapore", "Germany", "Hong Kong", "Australia", "Japan", "Belgium", "France", "Sweden", "South Korea", "Netherlands", "Denmark", "Taiwan", "Finland"]}
+    ],
+    "mark": "area",
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Number of Universities",
+        "sort": "ascending"
+      },
+      "color": {"field": "key", "type": "nominal", "title": "Country", "scale": {"scheme": "category20"}},
+      "tooltip": [
+        {"field": "Year", "type": "temporal", "title": "Year"},
+        {"field": "key", "type": "nominal", "title": "Country"},
+        {"field": "value", "type": "quantitative", "title": "Number of Universities"}
+      ]
+    },
+      "width": "container" ,
+      "height": 350
+
+  }
+  
