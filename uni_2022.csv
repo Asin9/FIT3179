@@ -1,0 +1,101 @@
+rank,name,number_students,student_staff_ratio,intl_students,female_male_ratio,overall_score,teaching_score,research_score,citations_score,industry_income_score,international_outlook_score,address,street_address,locality_address,region_address,postcode_address,country_address
+1,California Institute of Technology,2243,6.9,26,33,95.2,95.6,97.6,99.8,97.8,64,"1200 East California Boulevard, Pasadena, California, 91125, United States",,,,,United States
+2,University of Oxford,19920,11.6,34,46,94.2,86.5,98.9,98.8,73.1,94.4,"University Offices, Wellington Square, Oxford, Oxfordshire, OX1 2JD, United Kingdom",,,,,United Kingdom
+3,Stanford University,15596,7.8,22,42,93.9,92.5,96.2,99.9,63.3,76.3,"450 Jane Stanford Way, Stanford, California, United States",,,,,United States
+4,University of Cambridge,18810,11.8,34,46,92.8,88.2,96.7,97,55,91.5,"The Old Schools, Trinity Lane, Cambridge, Cambridgeshire, CB2 1TN, United Kingdom",,,,,United Kingdom
+5,Massachusetts Institute of Technology,11074,9.0,33,37,92,89.4,88.6,99.7,95.4,84,"77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",,,,,United States
+6,Harvard University,20152,8.9,25,,91.6,83.6,99,99.8,45.2,77.2,"Massachusetts Hall, Cambridge, Massachusetts, 02138, United States",,,,,United States
+7,Princeton University,7929,8.4,27,45,90.1,85.1,91.9,99.3,52.1,78.5,"Princeton, New Jersey, 08544, United States",,,,,United States
+8,Imperial College London,15060,11.7,51,37,89.1,83.3,88.5,96.7,53.7,96,"South Kensington Road, Kensington, London, SW7 2AZ, United Kingdom",,,,,United Kingdom
+9,ETH Zurich,18178,14.7,37,31,88.3,77,95,91.1,80,97.9,"Rämistrasse 101, Zürich, 8092, Switzerland",,,,,Switzerland
+10,The University of Chicago,14221,6.9,20,42,87.9,85.7,88.9,99.2,36.6,65,"Edward H. Levi Hall, 5801 South Ellis Avenue, Chicago, Illinois, 60637, United States",,,,,United States
+11,Johns Hopkins University,15128,3.6,23,50,87.6,77.6,90.4,98.2,100,70,"Baltimore, Maryland, 21218, United States",,,,,United States
+12,Yale University,11751,4.4,20,50,87.4,86.5,87.8,97.2,43.3,64.3,"New Haven, Connecticut, 06520, United States",,,,,United States
+13,"University of California, Berkeley",36186,16.4,15,50,87.2,80.4,91.1,99.7,47.9,61.9,"110 Sproul Hall, Berkeley, California, 94704, United States",,,,,United States
+14,UCL,26605,10.7,46,56,87.1,78.1,91,94.2,40.5,94.4,"Gower Street, London, WC1E 6BT, United Kingdom",,,,,United Kingdom
+15,Columbia University,25055,5.9,28,,86.1,85.9,82.2,98.1,-,73.5,"116th and Broadway, New York, 10027, United States",,,,,United States
+16,"University of California, Los Angeles",38206,10.3,15,52,85.8,80.8,88.6,98.5,47.9,56.4,"405 Hilgard Ave, Los Angeles, California, 90095, United States",,,,,United States
+17,University of Pennsylvania,20376,6.5,20,51,85.2,82,86.9,98.6,47.9,49.5,"3451 Walnut Street, Philadelphia, Philadelphia, Pennsylvania, 19104, United States",,,,,United States
+18,Cornell University,21424,10.2,19,48,84,77.9,86.1,97.2,33.7,63.9,"Day Hall Lobby, Ithaca, New York, 14853, United States",,,,,United States
+19,University of Toronto,66198,19.5,15,,83.9,75.9,89.3,90.9,49.1,77.8,"27 King's College Circle, Toronto, Ontario, M5S 1A1, Canada",,,,,Canada
+20,Duke University,15172,4.8,17,49,82.7,76,78,99,100,56.5,"Durham, North Carolina, 27708, United States",,,,,United States
+21,University of Michigan-Ann Arbor,41786,9.0,16,48,82.4,76.8,85.2,94.4,56.3,53.7,"500 S. State Street, Ann Arbor, Michigan, 48109, United States",,,,,United States
+22,Carnegie Mellon University,11885,13.1,35,39,82.3,67.4,88.8,99.1,57.5,57.1,"5000 Forbes Ave, Pittsburgh, Pennsylvania, 15213, United States",,,,,United States
+23,London School of Economics and Political Science,9235,12.1,70,53,81.3,69.8,80.6,94.3,32.2,93.6,"Houghton Street, London, WC2A 2AE, United Kingdom",,,,,United Kingdom
+24,University of Edinburgh,25775,14.1,36,58,80.3,68.6,77.2,96.3,36.1,89.8,"Old College, South Bridge, Edinburgh, EH8 9YL, United Kingdom",,,,,United Kingdom
+25,Northwestern University,18334,13.8,15,48,79.5,69.8,78.4,96.5,81.2,53.9,"633 Clark Street, Evanston, Illinois, 60208, United States",,,,,United States
+26,National University of Singapore,31592,15.5,34,49,79.2,71.7,84.5,79.4,49.8,96.2,"21 Lower Kent Ridge Road, 119077, Singapore",,,,,Singapore
+27,King’s College London,21395,11.4,37,61,78.2,64.5,75.8,93.8,40.1,93.8,"Strand, London, WC2R 2LS, United Kingdom",,,,,United Kingdom
+28,Karolinska Institute,7774,11.5,22,70,77.5,60.6,81.1,92.2,75.8,73.1,"SE-171 77, Stockholm, Sweden",,,,,Sweden
+29,LMU Munich,35691,15.5,13,62,77.3,70.5,77.4,85.7,100,62.8,"Geschwister-Scholl-Platz 1, Munich, 80539, Germany",,,,,Germany
+30,New York University,42056,6.8,19,55,77.2,74.7,72.3,95.3,30.4,49.3,"70 Washington Square South, New York, 10012, United States",,,,,United States
+31,École Polytechnique Fédérale de Lausanne,9666,10.5,54,27,76.1,61.3,67.5,94.6,65.4,98.6,"Route Cantonale, Lausanne, 1015, Switzerland",,,,,Switzerland
+32,University of Washington,44020,11.8,13,53,75.6,67.1,70,98.6,43.1,51.2,"1410 NE Campus Parkway, Seattle, Washington, 98195-5852, United States",,,,,United States
+33,University of Melbourne,40128,23.7,35,55,75.4,62,75.5,86.6,64.6,87.1,"Grattan Street, Parkville, Victoria, VIC 3010, Australia",,,,,Australia
+34,University of British Columbia,50152,17.6,25,54,75.3,60.2,73.2,91.5,42.6,90.5,"2900-2424 Main Mall, Vancouver, British Columbia, V6T 1Z4, Canada",,,,,Canada
+35,KU Leuven,42503,41.9,18,54,74.8,59.9,76.9,87.3,100,68.6,"Oude Markt 13, Leuven, 3000, Belgium",,,,,Belgium
+36,University of Illinois at Urbana-Champaign,42727,18.7,20,47,74.5,64.5,81.2,86.8,52.8,45.8,"901 West Illinois Street, Urbana, Illinois, 61801, United States",,,,,United States
+37,Universität Heidelberg,28881,24.5,17,55,74.4,68.8,69.6,88.2,68.2,62.8,"Grabengasse 1, Heidelberg, 69117, Germany",,,,,Germany
+38,McGill University,31326,13.7,23,56,72.6,66.1,72.1,78.9,40.3,85.5,"845 Sherbrooke Street West, Montreal, Quebec, H3A 0G4, Canada",,,,,Canada
+ =39,"University of California, San Diego",27233,6.5,11,48,72.2,56.9,69.8,98.7,56.7,42.9,"9500 Gilman Dr, La Jolla, California, 92093, United States",,,,,United States
+ =39,"University of California, Santa Barbara",22020,27.3,11,52,72.2,52.6,66,99.2,90.4,61.5,"Santa Barbara, 552 University Road, California, 93106, United States",,,,,United States
+41,Georgia Institute of Technology,19967,20.1,26,31,72.1,57.8,72.7,86,73.7,71.5,"North Avenue, Atlanta, Georgia, 30332, United States",,,,,United States
+42,Peking University,40148,8.3,14,,72,77.8,72.4,69.1,100,49.2,"No.5 Yiheyuan Road, Haidian District, Beijing, 100871, China",,,,,China
+43,The University of Tokyo,26199,5.7,10,,71.1,81.4,83,60.9,50.8,30.3,"7-3-1 Hongo, Bunkyo, Tokyo, 113-8654, Japan",,,,,Japan
+ =44,"University of California, Davis",35364,13.9,13,54,71,60.1,72.7,84.3,57.3,58.4,"1 Shields Avenue, California, 95616, United States",,,,,United States
+ =44,University of Hong Kong,19835,17.6,38,53,71,64.6,72.8,70.1,53.7,99.5,"9/F, Knowles Building Pok Fu Lam Road, Pokfulam, Hong Kong Island, Hong Kong",,,,,Hong Kong
+46,University of Texas at Austin,49427,17.4,9,51,70.3,59.3,69.7,92.2,63.1,31.7,"110 Inner Campus Drive, Austin, Texas, 78705, United States",,,,,United States
+ =47,Tsinghua University,39763,13.7,10,32,70,73.3,83,58.8,100,39.5,"1 Qinqhuayuan, Beijing, 100084, China",,,,,China
+ =47,Wageningen University & Research,9248,17.0,21,56,70,52.6,66.9,87.8,100,70.3,"Droevendaalsesteeg 4, Building nr. 104, Wageningen, 6702 PB, Netherlands",,,,,Netherlands
+49,Humboldt University of Berlin,29987,52.5,16,,69.9,63.7,77,73.6,36.1,62.6,"Unter den Linden 6, D-10099 Berlin, Germany",,,,,Germany
+50,University of Wisconsin-Madison,39655,10.8,11,51,69.7,65.1,68.2,86.6,48.5,33,"Union South, 1308 W. Dayton St, Madison, Wisconsin, 53715-1149, United States",,,,,United States
+51,Brown University,8653,10.1,19,,69.6,62.8,55.7,96.4,31.4,57.8,"Providence, Rhode Island, 02912, United States",,,,,United States
+52,Australian National University,14604,19.2,35,52,69.5,54.7,77.3,72.3,48,93.3,"Acton, Australian Capital Territory, ACT 2601, Australia",,,,,Australia
+53,Technical University of Munich,35565,31.5,20,33,69.4,61,66,80.1,99.2,63.8,"Arcisstraße 21, Munich, D-80333, Germany",,,,,Germany
+54,École Normale Supérieure,2400,7.9,20,46,69,70.6,47.7,87.1,37.1,85.5,"45 Rue d'Ulm, Cedex 05, Paris, 75230, France",,,,,France
+55,"Nanyang Technological University, Singapore",25028,16.2,33,48,68.2,48.4,61.3,85.6,99.9,94.6,"50 Nanyang Avenue, 639798, Singapore",,,,,Singapore
+ =56,University of Manchester,34940,15.3,34,52,68.1,58.4,66,77.3,42,87,"Oxford Road, Manchester, Lancashire, M13 9PL, United Kingdom",,,,,United Kingdom
+ =56,The University of Sydney,41868,20.2,28,57,68.1,54.3,68.1,77.5,72.4,84.4,"Sydney, New South Wales, 2006, Australia",,,,,Australia
+58,University of Amsterdam,24570,14.4,11,53,67.8,52.2,64.7,87.4,62.8,66.5,"P.O. Box 19268, 1000 GG Amsterdam, Netherlands",,,,,Netherlands
+59,The Hong Kong University of Science and Technology,11385,23.8,36,,67.2,49.4,66.1,82.6,68.1,80.5,"Clear Water Bay, Kowloon, Hong Kong",,,,,Hong Kong
+ =60,The University of Queensland,34718,32.7,27,53,67,49.2,62.8,82.4,76.7,89.3,"Brisbane St Lucia, Brisbane, Queensland, QLD 4072, Australia",,,,,Australia
+ =60,Washington University in St Louis,12528,5.7,17,0 ,67,54.3,55.6,99.2,33.5,44.9,"One Brookings Drive, St. Louis, Missouri, 63130, United States",,,,,United States
+62,Utrecht University,30779,15.4,7,59,66.6,48.1,64.3,88.1,89.1,55.8,"P.O Box 80125, TC Utrecht, 3508, Netherlands",,,,,Netherlands
+63,University of North Carolina at Chapel Hill,26518,7.3,8,58,66.4,58,54.5,95.9,39.4,39,"174 Country Club Road, Chapel Hill, North Carolina, 27599, United States",,,,,United States
+64,Boston University,24789,8.6,17,58,66.1,57.8,49.5,97.7,30.3,51,"One Silber Way, Boston, Massachusetts, 02215, United States",,,,,United States
+ =65,Delft University of Technology,15920,19.4,25,26,65.9,55,73.8,61.5,100,84,"Postbus 5, 2600 AA Delft, Netherlands",,,,,Netherlands
+ =65,University of Minnesota,46825,18.0,12,52,65.9,53.5,61,88,98.5,35.3,"3 Morrill Hall, 100 Church St. S.E., Minneapolis, Minnesota, 55455, United States",,,,,United States
+67,Leiden University,21222,17.1,9,59,65.7,50.5,63.1,85.2,49.8,64.3,"PO Box 9500, Leiden, 2300, Netherlands",,,,,Netherlands
+68,University of Southern California,36534,12.9,20,52,65.5,49.3,58.9,93,38,56.3,"University of Southern Califor, Los Angeles, California, 90089, United States",,,,,United States
+69,University of Bristol,17905,14.0,25,53,64.3,47.6,51.6,91.2,40,82.4,"Beacon House, Queens Road, Bristol, Avon, BS8 1QU, United Kingdom",,,,,United Kingdom
+70,Durham University,15490,15.7,24,54,63.6,47.9,51.9,87.7,34.4,86.4,"Stockton Road, Durham, County Durham, DH1 3LE, United Kingdom",,,,,United Kingdom
+71,Erasmus University Rotterdam,20580,18.9,17,48,63.5,37.2,55.2,95.6,54.6,76.1,"Burgemeester Oudlaan 50, Rotterdam, 3062 PA, Netherlands",,,,,Netherlands
+72,Free University of Berlin,33062,39.3,20,58,63.2,57.9,72.2,60.2,35.1,69.2,"Kaiserswerther Str. 16-18, 14195 Berlin, Germany",,,,,Germany
+73,Monash University,50882,40.5,36,56,62.8,48.3,59.1,73.3,82.5,87.6,"Wellington Rd, Clayton, Victoria, 3800, Australia",,,,,Australia
+74,University of Groningen,24556,25.6,11,52,62.4,43.3,56.9,84,92.4,63.9,"PO Box 72, 9700 AB Groningen, Netherlands",,,,,Netherlands
+75,Penn State (Main campus),44501,12.4,12,46,62.3,50.4,61.9,80.5,56.2,40.8,"201 Old Main, University Park, Pennsylvania, 16802, United States",,,,,United States
+ =76,University of Glasgow,22615,16.0,29,57,61.9,41.6,48.3,92.3,31.6,85.8,"Glasgow, G12 8QQ, United Kingdom",,,,,United Kingdom
+ =76,University of Helsinki,23505,15.1,6,66,61.9,48.4,60.4,82.1,31.6,51.8,"P.O. Box 4, (Yliopistonkatu 3), 00014, Finland",,,,,Finland
+78,University of Tübingen,28327,38.9,12,58,61.7,47,59.8,79.3,59.2,58.2,"Geschwister-Scholl-Platz, Tubingen, 72074, Germany",,,,,Germany
+79,University of Pittsburgh-Pittsburgh campus,26485,5.8,10,51,61.5,50.6,50.3,92.3,39.3,33.9,"4200 Fifth Avenue, Pittsburgh, Pennsylvania, 15260, United States",,,,,United States
+80,University of Warwick,18530,16.6,37,48,61.3,47.4,53.1,78.2,37.7,90.3,"Gibbet Hill Road, Coventry, Warwickshire, CV4 7AL, United Kingdom",,,,,United Kingdom
+81,Uppsala University,25266,18.2,12,57,61.2,44.1,61,80.9,39.5,59.6,"P.O. Box 256, SE-751 05, Uppsala, Sweden",,,,,Sweden
+ =82,University of Copenhagen,27545,4.1,19,67,61,49.8,42.7,86.2,45,83.3,"Nørregade 10 Postboks 2177, 1017 København K, Denmark",,,,,Denmark
+ =82,UNSW Sydney,38309,25.9,32,47,61,40.7,53.9,82.1,50,89.5,"High St, Kensington, Sydney, New South Wales, NSW 2052, Australia",,,,,Australia
+84,University of Freiburg,26467,31.2,16,52,60.7,47.4,51.1,80.5,100,60.3,"Fahnenbergplatz, 79085 Freiburg, Germany",,,,,Germany
+85,Seoul National University,26389,13.9,10,,60.5,66.5,70.5,50,85.4,30.9,"1 Gwanak-ro, Gwanak-gu, Seoul, 08826, South Korea",,,,,South Korea
+86,University of St Andrews,8340,12.7,47,56,60.4,49.7,47.3,78.8,30.6,92.3,"College Gate, St. Andrews, Fife, KY16 9AJ, United Kingdom",,,,,United Kingdom
+87,Vanderbilt University,12161,3.6,9,52,60.1,47.8,44.2,95.7,63.2,29.1,"Nashville, Tennessee, 37240, United States",,,,,United States
+ =88,Kyoto University,22809,5.6,7,,59.9,70.6,69.3,46.6,79,26.1,"Yoshida-honmachi, Sakyo-ku, Kyoto, 606-8501, Japan",,,,,Japan
+ =88,Maastricht University,15626,18.9,48,56,59.9,37.5,47.7,82.7,95.4,95.5,"Postbus 616, Maastricht, 6200 MD, Netherlands",,,,,Netherlands
+ =90,Emory University,12338,4.5,18,56,59.7,48.3,37.1,96.7,48.9,51,"201 Dowman Drive, Atlanta, Georgia, 30322, United States",,,,,United States
+ =90,Lund University,28251,11.5,15,,59.7,39.7,53.6,81.3,70.4,74.1,"Box 117, 221 00 Lund, Sweden",,,,,Sweden
+ =90,Ohio State University (Main campus),51462,13.4,12,49,59.7,51.6,46.6,83.2,53.1,53,"281 W. Lane Ave, Columbus, Ohio, 43210, United States",,,,,United States
+93,University of Exeter,17755,18.8,28,54,59.5,39.4,40,94.3,31.9,87.3,"Stocker Road, Exeter, Devon, EX4 4PY, United Kingdom",,,,,United Kingdom
+ =94,University of Bonn,32474,70.4,12,55,58.8,45.1,47.5,85.3,-,63.6,"Regina Pacis Weg 3, D-53012 Bonn, Germany",,,,,Germany
+ =94,Georgetown University,15408,8.5,14,53,58.8,54.4,39.3,82.5,80.7,52.7,"37th and O Streets, North West, District of Columbia, 20057, United States",,,,,United States
+ =94,McMaster University,23823,19.3,15,53,58.8,39.8,44.8,84.9,88,76.1,"1280 Main Street West, Hamilton, Ontario, L8S 4L8, Canada",,,,,Canada
+97,University of Sheffield,23310,15.4,31,50,58.6,42.4,48.8,80.1,43.4,81.9,"Western Bank, Sheffield, South Yorkshire, S10 2TN, United Kingdom",,,,,United Kingdom
+98,Queen Mary University of London,14260,14.0,40,52,58.5,34.1,41.3,93.3,36.8,93.5,"QMUL Accounts Payable, PO Box 68942, London, E1W 9JD, United Kingdom",,,,,United Kingdom
+ =99,University of Göttingen,25581,25.6,12,51,58,49.3,54.5,72.7,31.8,56.4,"Wilhelmsplatz, 37073 Göttingen, Germany",,,,,Germany
+ =99,Michigan State University,44750,15.7,15,51,58,47.3,52.6,76.8,32.2,56.4,"220 Trowbridge Rd, East Lansing, Michigan, 48824, United States",,,,,United States

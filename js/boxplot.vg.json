@@ -28,6 +28,8 @@
             "legend": {"title": "Continent"}},
       "tooltip": [
         {"field": "Location", "type": "nominal"},
+        {"field": "Name", "type": "nominal"},
+
         {"field": "ResearchScore", "type": "quantitative"}
   
       ]

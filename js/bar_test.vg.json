@@ -1,0 +1,57 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_6.csv"
+    },
+   "transform": [
+      {"calculate": "datum.University + ' ' + datum.Name", "as": "RankName"},
+      {"calculate": "datum.University", "as": "Rank"}
+  
+    ],
+    "vconcat": [
+      {
+        "width": "1000",
+        "height": 240,
+        "mark": "bar",
+        "encoding": {
+    "x": {
+      "field": "RankName",
+      "type": "nominal",
+      "axis": {"labelExpr": "split(datum.value, ' ')[0]", "tickCount": 10},
+      "sort": {"op": "sum", "field": "Rank", "order": "ascending"},
+      "scale": {"domain": {"param": "brush"}}
+    },
+  
+      
+      "y": {"field": "InternationalOutlookScore", "type": "quantitative"},
+  
+      "tooltip": [
+      {"field": "Name", "type": "nominal"},
+      {"field": "Students Per Staff", "type": "quantitative"},
+      {"field": "Teaching Score", "type": "quantitative"}]
+      
+    }
+      },
+      {
+        "width": "1000",
+        "height": 60,
+        "mark": "bar",
+        "params": [
+          {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
+        ],
+        "encoding": {
+              "x": {
+            "field": "RankName",
+            "type": "nominal",
+  
+            "sort": {"op": "sum", "field": "Rank", "order": "ascending"}
+          },
+          "y": {
+            "field": "InternationalOutlookScore",
+            "type": "quantitative",
+            "axis": {"tickCount": 3, "grid": false}
+          }
+        }
+      }
+    ]
+  }

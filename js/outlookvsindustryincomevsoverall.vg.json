@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_6.csv"
+    },
+    "title": ["Top 100 Universities Heatmap:", "International Outlook Score vs. Industry Income Score", "vs. Overall Score"],
+    "transform": [
+      { "calculate": "datum.InternationalOutlookScore", "as": "International Outlook Score" },
+      { "calculate": "datum.IndustryIncomeScore", "as": "Industry Income Score" },
+      { "calculate": "datum.OverAllScore", "as": "Overall Score" }
+    ],
+    "mark": "rect",
+    "encoding": {
+      "y": { "field": "Industry Income Score", "type": "quantitative", "bin": true },
+      "x": { "field": "Overall Score", "type": "quantitative", "bin": true },
+      "color": {
+        "aggregate": "mean",
+        "field": "International Outlook Score",
+        "type": "quantitative",
+        "scale": { "scheme": "blues" ,  "domain": [40, 100]
+  }
+      },
+      "tooltip": [
+        { "field": "International Outlook Score", "title": "International Outlook Score", "bin": true },
+        { "field": "Industry Income Score", "title": "Industry Income Score", "bin": true }
+      ]
+    },
+    "width": 270,
+    "height": 300,
+    "config": {
+      "axis": { "grid": true, "tickBand": "extent"},
+      "legend": { "orient": "bottom", "titleLimit": 300, "layout": { "bottom": { "anchor": "middle" } }
+      }
+    }
+  }
+  
