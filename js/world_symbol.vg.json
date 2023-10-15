@@ -12,7 +12,7 @@
   },
   "projection": {
     "type": "mercator",
-    "center": [15, 15], 
+    "center": [15, 15],
     "scale": 110
   },
   "layer": [
@@ -33,23 +33,23 @@
         { "calculate": "datum.Location", "as": "Country" },
         { "calculate": "datum.Nostudent", "as": "Total Students" },
         {
-          "calculate": "format(datum.Longitude + (random() - 0.5) * 0.1, '.4f')", 
+          "calculate": "format(datum.Longitude + (random() - 0.5) * 0.1, '.4f')",
           "as": "FormattedLongitude"
         },
         {
-          "calculate": "format(datum.Latitude + (random() - 0.5) * 0.1, '.4f')",   
+          "calculate": "format(datum.Latitude + (random() - 0.5) * 0.1, '.4f')",
           "as": "FormattedLatitude"
         }
       ],
-      "mark": "circle",  
+      "mark": "circle",
       "encoding": {
-        "longitude": { "field": "Longitude", "type": "quantitative" }, 
-        "latitude": { "field": "Latitude", "type": "quantitative" },    
+        "longitude": { "field": "Longitude", "type": "quantitative" },
+        "latitude": { "field": "Latitude", "type": "quantitative" },
         "tooltip": [
           { "field": "University Name", "type": "nominal" },
           { "field": "Country", "type": "nominal" },
           { "field": "Rank", "type": "quantitative" },
-          { "field": "Total Students", "type": "quantitative" }
+          { "field": "Total Students", "type": "quantitative" , "format": "," }
         ],
         "color": {
           "field": "Rank",
@@ -60,9 +60,127 @@
             "range": ["lightblue", "#00004D"]
           }
         }
-        
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "text": ["University", "of Oxford"],
+            "University Name": "University of Oxford",
+            "Country": "England",
+            "Total Students": "20,965",
+            "longitude": -15.5521001611093754,
+            "latitude": 51.77067317196132,
+            "University": 1,
+            "Rank": 1
+
+          }
+        ]
+      },
+      "transform": [{"filter": "datum.University === 1"}],
+      "mark": "text",
+      "encoding": {
+        "text": { "field": "text", "type": "nominal" },
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
+        "tooltip": [
+          { "field": "University Name", "type": "nominal" },
+          { "field": "Country", "type": "nominal" },
+          { "field": "Rank", "type": "quantitative" },
+          { "field": "Total Students", "type": "nominal" }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "text": ["Harvard", "University"],
+            "University Name": "Harvard University",
+            "Country": "United States",
+            "Total Students": "20,965",
+            "longitude": -60.85459664241168,
+            "latitude": 40.13388624163738,
+            "University": 1,
+            "Rank": 2
+
+          }
+        ]
+      },
+      "transform": [{"filter": "datum.University === 1"}],
+      "mark": "text",
+      "encoding": {
+        "text": { "field": "text", "type": "nominal" },
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
+        "tooltip": [
+          { "field": "University Name", "type": "nominal" },
+          { "field": "Country", "type": "nominal" },
+          { "field": "Rank", "type": "quantitative" },
+          { "field": "Total Students", "type": "nominal" }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "text": ["Tsinghua", "University"],
+            "University Name": "Tsinghua University",
+            "Country": "China",
+            "Total Students": "38,324",
+            "longitude": 116.36826685619117,
+            "latitude": 47.867610804988544,
+            "University": 1,
+            "Rank": 16
+
+          }
+        ]
+      },
+      "transform": [{"filter": "datum.University === 1"}],
+      "mark": "text",
+      "encoding": {
+        "text": { "field": "text", "type": "nominal" },
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
+        "tooltip": [
+          { "field": "University Name", "type": "nominal" },
+          { "field": "Country", "type": "nominal" },
+          { "field": "Rank", "type": "quantitative" },
+          { "field": "Total Students", "type": "nominal" }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "text": ["University of", "Melbourne"],
+            "University Name": "University of Melbourne",
+            "Country": "Australia",
+            "Total Students": "49,588",
+            "longitude": 144.823880655641,
+            "latitude": -41.68991920061353,
+            "University": 1,
+            "Rank": 34
+
+          }
+        ]
+      },
+      "transform": [{"filter": "datum.University === 1"}],
+      "mark": "text",
+      "encoding": {
+        "text": { "field": "text", "type": "nominal" },
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
+        "tooltip": [
+          { "field": "University Name", "type": "nominal" },
+          { "field": "Country", "type": "nominal" },
+          { "field": "Rank", "type": "quantitative" },
+          { "field": "Total Students", "type": "nominal" }
+        ]
       }
     }
-    
   ]
 }
