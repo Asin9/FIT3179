@@ -1,71 +1,84 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Average Student-to-Staff Ratio vs. Teaching Score for Oceania Countries",
-    "data": {
-      "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_6.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Average Student-to-Staff Ratio vs. Teaching Score for Oceania Countries",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_6.csv"
+  },
+  "title": "Teaching Score vs Students Per Staff",
+  "transform": [
+    {
+      "aggregate": [
+        {"op": "mean", "field": "Nostudentperstaff", "as": "Students Per Staff"},
+        {"op": "mean", "field": "TeachingScore", "as": "Teaching Score"}
+      ],
+      "groupby": ["University", "Name", "Continent"]
     },
-    "title": "Teaching Score vs Students Per Staff",
-
-    "transform": [
-      {
-        "aggregate": [
-          {"op": "mean", "field": "Nostudentperstaff", "as": "Students Per Staff"},
-          {"op": "mean", "field": "TeachingScore", "as": "Teaching Score"}
-        ],
-        "groupby": ["University", "Name", "Continent"]
-      },
-      {
-        "filter": {"field": "Continent", "equal": "Asia"}
-      }
-    ],
-    "layer": [
-      {
-        "mark": "circle",
-        "encoding": {
-          "x": {
-            "field": "Students Per Staff",
-            "type": "quantitative",
-            "title": "Students Per Staff",
-            "scale": {"domain": [5, 30]}
-          },
-          "y": {
-            "field": "Teaching Score",
-            "type": "quantitative",
-            "title": "Teaching Score",
-            "scale": {"domain": [40, 100]}
-          },
-          "color": {
-            "field": "Continent",
-            "type": "nominal",
-            "scale": {
-              "domain": ["Asia"],
-              "range": ["#377eb8"]
-            },
-            "legend": {"title": "Continent"}
-          },
-          "tooltip": [
-            {"field": "Name", "type": "nominal"},
-            {"field": "Students Per Staff", "type": "quantitative"},
-            {"field": "Teaching Score", "type": "quantitative"}
-          ]
-        }
-      },
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/regression%20-%20teaching%20score%20to%20studentspstaff_asia.csv"
+    {
+      "filter": {"field": "Continent", "equal": "Asia"}
+    }
+  ],
+  "layer": [
+    {
+      "mark": "circle",
+      "encoding": {
+        "x": {
+          "field": "Students Per Staff",
+          "type": "quantitative",
+          "title": "Students Per Staff",
+          "scale": {"domain": [5, 30]}
         },
-        "mark": {"type": "line", "color": "grey"},
-        "encoding": {
-          "x": {"field": "x_fit", "type": "quantitative"},
-          "y": {"field": "y_fit", "type": "quantitative"}
-        }
+        "y": {
+          "field": "Teaching Score",
+          "type": "quantitative",
+          "title": "Teaching Score",
+          "scale": {"domain": [40, 100]}
+        },
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Asia"],
+            "range": ["#377eb8"]
+          },
+          "legend": {"title": "Continent"}
+        },
+        "tooltip": [
+          {"field": "Name", "type": "nominal"},
+          {"field": "Students Per Staff", "type": "quantitative"},
+          {"field": "Teaching Score", "type": "quantitative"}
+        ]
       }
-    ],
-    "width": 270,
-    "height": 300,
-
-    "config": {
-      "legend": {"orient": "bottom", "layout": {"bottom": {"anchor": "middle"}}}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/regression%20-%20teaching%20score%20to%20studentspstaff_asia.csv"
+      },
+      "mark": {"type": "line", "color": "grey"},
+      "encoding": {
+        "x": {"field": "x_fit", "type": "quantitative"},
+        "y": {"field": "y_fit", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "fontSize": 10.5,
+        "dx": -2
+      },
+      "encoding": {
+        "text": {"value": "Peking University"},
+        "x": {"value": 70},  
+        "y": {"value": 35},
+        "color": {"value": "black"}
+      }
+    }
+  ],
+  "width": 270,
+  "height": 300,
+  "config": {
+    "legend": {"orient": "bottom", "layout": {"bottom": {"anchor": "middle"}}
     }
   }
-  
+}

@@ -1,71 +1,85 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Average Student-to-Staff Ratio vs. Teaching Score for Oceania Countries",
-    "data": {
-      "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_6.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Average Student-to-Staff Ratio vs. Teaching Score for Oceania Countries",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_6.csv"
+  },
+  "title": "Teaching Score vs Students Per Staff",
+
+  "transform": [
+    {
+      "aggregate": [
+        {"op": "mean", "field": "Nostudentperstaff", "as": "Students Per Staff"},
+        {"op": "mean", "field": "TeachingScore", "as": "Teaching Score"}
+      ],
+      "groupby": ["University", "Name", "Continent"]
     },
-    "title": "Teaching Score vs Students Per Staff",
-
-    "transform": [
-      {
-        "aggregate": [
-          {"op": "mean", "field": "Nostudentperstaff", "as": "Students Per Staff"},
-          {"op": "mean", "field": "TeachingScore", "as": "Teaching Score"}
-        ],
-        "groupby": ["University", "Name", "Continent"]
-      },
-      {
-        "filter": {"field": "Continent", "equal": "Europe"}
-      }
-    ],
-    "layer": [
-      {
-        "mark": "circle",
-        "encoding": {
-          "x": {
-            "field": "Students Per Staff",
-            "type": "quantitative",
-            "title": "Students Per Staff",
-            "scale": {"domain": [5, 55]}
-          },
-          "y": {
-            "field": "Teaching Score",
-            "type": "quantitative",
-            "title": "Teaching Score",
-            "scale": {"domain": [30, 100]}
-          },
-          "color": {
-            "field": "Continent",
-            "type": "nominal",
-            "scale": {
-              "domain": ["Europe"],
-              "range": ["#e41a1c"]
-            },
-            "legend": {"title": "Continent"}
-          },
-          "tooltip": [
-            {"field": "Name", "type": "nominal"},
-            {"field": "Students Per Staff", "type": "quantitative"},
-            {"field": "Teaching Score", "type": "quantitative"}
-          ]
-        }
-      },
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/regression%20-%20teaching%20score%20to%20studentspstaff_eu.csv"
+    {
+      "filter": {"field": "Continent", "equal": "Europe"}
+    }
+  ],
+  "layer": [
+    {
+      "mark": "circle",
+      "encoding": {
+        "x": {
+          "field": "Students Per Staff",
+          "type": "quantitative",
+          "title": "Students Per Staff",
+          "scale": {"domain": [5, 55]}
         },
-        "mark": {"type": "line", "color": "grey"},
-        "encoding": {
-          "x": {"field": "x_fit", "type": "quantitative"},
-          "y": {"field": "y_fit", "type": "quantitative"}
-        }
+        "y": {
+          "field": "Teaching Score",
+          "type": "quantitative",
+          "title": "Teaching Score",
+          "scale": {"domain": [30, 100]}
+        },
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Europe"],
+            "range": ["#e41a1c"]
+          },
+          "legend": {"title": "Continent"}
+        },
+        "tooltip": [
+          {"field": "Name", "type": "nominal"},
+          {"field": "Students Per Staff", "type": "quantitative"},
+          {"field": "Teaching Score", "type": "quantitative"}
+        ]
       }
-    ],
-    "width": 270,
-    "height": 300,
-
-    "config": {
-      "legend": {"orient": "bottom", "layout": {"bottom": {"anchor": "middle"}}}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/regression%20-%20teaching%20score%20to%20studentspstaff_eu.csv"
+      },
+      "mark": {"type": "line", "color": "grey"},
+      "encoding": {
+        "x": {"field": "x_fit", "type": "quantitative"},
+        "y": {"field": "y_fit", "type": "quantitative"}
+      }
+    },
+        {
+    "mark": {
+      "type": "text",
+      "align": "left",
+      "baseline": "bottom",
+      "fontSize": 10.5,
+      "dx": -2
+    },
+    "encoding": {
+      "text": {"value": "University of Oxford"},
+      "x": {"value": 35},  
+      "y": {"value": 29.5},
+      "color": {"value": "black"}
     }
   }
-  
+  ],
+  "width": 270,
+  "height": 300,
+
+  "config": {
+    "legend": {"orient": "bottom", "layout": {"bottom": {"anchor": "middle"}}}
+  }
+}

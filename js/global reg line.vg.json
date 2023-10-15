@@ -1,71 +1,115 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    
-    "description": "Average Student-to-Staff Ratio vs. Teaching Score",
-    "data": {
-      "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_6.csv"
-    },
-    "title": "Teaching Score vs Students Per Staff",
-
-    "transform": [
-      {
-        "aggregate": [
-          {"op": "mean", "field": "Nostudentperstaff", "as": "Students Per Staff"},
-          {"op": "mean", "field": "TeachingScore", "as": "Teaching Score"}
-        ],
-        "groupby": ["University", "Name", "Continent"]
-      }
-    ],
-    "layer": [
-      {
-        "mark": "circle",
-        "encoding": {
-          "x": {
-            "field": "Students Per Staff",
-            "type": "quantitative",
-            "title": "Students Per Staff",
-            "scale": {"domain": [3, 55]}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
-          },
-          "y": {
-            "field": "Teaching Score",
-            "type": "quantitative",
-            "title": "Teaching Score",
-            "scale": {"domain": [30, 100]}
-          },
-          
-          "color": {
-          "field": "Continent",
-          "type": "nominal",
-          "scale": {
-            "domain": ["Europe", "North America", "Asia", "Oceania"],
-            "range": ["#e41a1c", "#984ea3", "#377eb8", "#a65628"]
-          },
-          "legend": {"title": "Continent"}},
-          "tooltip": [
-            {"field": "Name", "type": "nominal"},
-            {"field": "Students Per Staff", "type": "quantitative"},
-            {"field": "Teaching Score", "type": "quantitative"}]
-          
-          }
-          
-      },
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/regression%20-%20teaching%20score%20to%20studentspstaff_global.csv"
-        },
-        "mark": {"type": "line", "color": "gray"},
-        "encoding": {
-          "x": {"field": "x_fit", "type": "quantitative"},
-          "y": {"field": "y_fit", "type": "quantitative"}
-        }
-      }
-    ],
-    "width": 270,
-    "height": 300,
+  "description": "Average Student-to-Staff Ratio vs. Teaching Score",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_6.csv"
+  },
+  "title": "Teaching Score vs Students Per Staff",
 
-    "config": {
-      "legend": {"orient": "bottom", "layout": {"bottom": {"anchor": "middle"}}}
+  "transform": [
+    {
+      "aggregate": [
+        {"op": "mean", "field": "Nostudentperstaff", "as": "Students Per Staff"},
+        {"op": "mean", "field": "TeachingScore", "as": "Teaching Score"}
+      ],
+      "groupby": ["University", "Name", "Continent"]
     }
+  ],
+  "layer": [
+    {
+      "mark": "circle",
+      "encoding": {
+        "x": {
+          "field": "Students Per Staff",
+          "type": "quantitative",
+          "title": "Students Per Staff",
+          "scale": {"domain": [3, 55]}
+
+        },
+        "y": {
+          "field": "Teaching Score",
+          "type": "quantitative",
+          "title": "Teaching Score",
+          "scale": {"domain": [30, 100]}
+        },
+        
+        "color": {
+        "field": "Continent",
+        "type": "nominal",
+        "scale": {
+          "domain": ["Europe", "North America", "Asia", "Oceania"],
+          "range": ["#e41a1c", "#984ea3", "#377eb8", "#a65628"]
+        },
+        "legend": {"title": "Continent"}},
+        "tooltip": [
+          {"field": "Name", "type": "nominal"},
+          {"field": "Students Per Staff", "type": "quantitative"},
+          {"field": "Teaching Score", "type": "quantitative"}]
+        
+        }
+        
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/regression%20-%20teaching%20score%20to%20studentspstaff_global.csv"
+      },
+      "mark": {"type": "line", "color": "gray"},
+      "encoding": {
+        "x": {"field": "x_fit", "type": "quantitative"},
+        "y": {"field": "y_fit", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "fontSize": 10.5,
+        "dx": -2
+      },
+      "encoding": {
+        "text": {"value": "Peking University and Oxford University"},
+        "x": {"value": 60},  
+        "y": {"value": 35},
+        "color": {"value": "black"}
+      }
+    },
+          {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "fontSize": 10.5,
+        "dx": -2
+      },
+      "encoding": {
+        "text": {"value": "Harvard University"},
+        "x": {"value": 50},  
+        "y": {"value": 20},
+        "color": {"value": "black"}
+      }
+    },
+                {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "fontSize": 10.5,
+        "dx": -2
+      },
+      "encoding": {
+        "x": {"value": 105},  
+        "y": {"value": 125},
+        "color": {"value": "black"},
+        "text": {"value": ["University of", "Melbourne"]
+      }
+    }}
+  ],
+  "width": 270,
+  "height": 300,
+
+  "config": {
+    "legend": {"orient": "bottom", "layout": {"bottom": {"anchor": "middle"}}}
   }
-  
+}

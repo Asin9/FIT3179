@@ -1,106 +1,128 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 550,
-    "height": 350,
-    "title": "International Students vs Overall Score",
-    "data": {
-      "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_gender_students_decimal.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,
+  "height": 350,
+  "title": "International Students vs Overall Score",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_gender_students_decimal__.csv"
+  },
+  "params": [
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "North America",
+          "Europe",
+          "Asia",
+          "Oceania"
+        ],
+        "labels": [
+          "Show All",
+          "North America",
+          "Europe",
+          "Asia",
+          "Oceania"
+        ],
+        "name": "Continent Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.Nostudentperstaff > 0"},
+    {"calculate": "datum.Nostudentperstaff", "as": "Population"},
+    {"calculate": "datum.Nostudentperstaff", "as": "Number of Students Per Staff"},
+    {"calculate": "datum.Nostudent", "as": "Number of Students"},
+    {"calculate": "datum.University", "as": "Rank"},
+    {"calculate": "datum.OverAllScore", "as": "Score"},
+    {"calculate": "datum.Name", "as": "University Name"},
+    {"filter": "Continent_selection == null || datum.Continent == Continent_selection"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "OverAllScore",
+      "type": "quantitative",
+      "title": "University Score",
+      "scale": {"domain": [60, 100]}
     },
-    "params": [
-      {
-        "name": "Continent_selection",
-        "bind": {
-          "input": "select",
-          "options": [
-            null,
-            "North America",
-            "Europe",
-            "Asia",
-            "Oceania"
-          ],
-          "labels": [
-            "Show All",
-            "North America",
-            "Europe",
-            "Asia",
-            "Oceania"
-          ],
-          "name": "Continent Selection: "
+    "y": {
+      "field": "InternationalStudent",
+      "type": "quantitative",
+      "title": "Percentage of International Students"
+    },
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Europe", "North America", "Asia", "Oceania"],
+        "range": ["#e41a1c", "#984ea3", "#377eb8", "#a65628"]
+      },
+      "legend": {"title": "Continent"}
+    },
+    "tooltip": [
+      {"field": "University Name", "type": "nominal"},
+      {"field": "Rank", "type": "quantitative"},
+      {"field": "Number of Students", "type": "quantitative", "format": ","},
+      {"field": "Number of Students Per Staff", "type": "quantitative", "format": ","}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "opacity": 0.6,
+        "tooltip": true
+      },
+      "encoding": {
+        "size": {
+          "field": "Number of Students",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [0, 20000, 40000, 60000],
+            "range": [10, 50, 150, 200, 300, 400]
+          },
+          "legend": {"format": ".1s"}
         }
       }
-    ],
-    "transform": [
-      {"filter": "datum.Nostudentperstaff > 0"},
-      {"calculate": "datum.Nostudentperstaff", "as": "Population"},
-          {"calculate": "datum.Nostudentperstaff", "as": "Number of Students Per Staff"},
-  
-      {"calculate": "datum.Nostudent", "as": "Number of Students"},
-      {"calculate": "datum.University", "as": "Rank"},
-      {"calculate": "datum.OverAllScore", "as": "Score"},
-      {"calculate": "datum.Name", "as": "University Name"},
-      {"filter": "Continent_selection == null || datum.Continent == Continent_selection"}
-    ],
-    "encoding": {
-      "x": {
-        "field": "OverAllScore",
-        "type": "quantitative",
-        "title": "University Score",
-        "scale": {"domain": [60, 100]}
-      },
-      "y": {
-        "field": "InternationalStudent",
-        "type": "quantitative",
-        "title": "Percentage of International Students"
-      },
-      "color": {
-        "field": "Continent",
-        "type": "nominal",
-        "scale": {
-          "domain": ["Europe", "North America", "Asia", "Oceania"],
-          "range": ["#e41a1c", "#984ea3", "#377eb8", "#a65628"]
-        },
-        "legend": {"title": "Continent"}
-  
-      },
-            "tooltip": [
-            {"field": "University Name", "type": "nominal"},
-            {"field": "Rank", "type": "quantitative"},
-            {"field": "Number of Students", "type": "quantitative", "format": ","},
-            {"field": "Number of Students Per Staff", "type": "quantitative", "format": ","}
-          ]
     },
-    "layer": [
-      {
-        "mark": {
-          "type": "circle",
-          "opacity": 0.6,
-          "tooltip": true
-        },
-        "encoding": {
-          "size": {
-            "field": "Number of Students",
-            "type": "quantitative",
-            "scale": {
-              "type": "threshold",
-              "domain": [0, 20000, 40000, 60000],
-              "range": [10, 50, 150, 200, 300, 400]
-            },
-            "legend": {"format": ".1s"}
-          }
-        }
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "dx": -4,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "fontSize": 7.5,
+        "fontStyle": "italic",
+        "dx": -33,
+        "dy": -4
       },
-      {
-        "mark": {
-          "type": "text",
-          "align": "right",
-          "baseline": "bottom",
-          "dx": -4,
-          "fontSize": 11.5,
-          "fontStyle": "italic"
-        }    }
-    ],
-    "config": {
-      "view": {"stroke": "transparent"}
+"encoding": {
+        "text": {"field": "University Name", "type": "nominal"},
+        "x": {"field": "OverAllScore", "type": "quantitative"},
+        "y": {"field": "InternationalStudent", "type": "quantitative"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['University'] == '1' || datum['University'] == '2' || datum['University'] == '16'||datum['University'] == '34'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
     }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"}
   }
-  
+}
