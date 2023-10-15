@@ -4,6 +4,8 @@
     "data": {
       "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_.csv"
     },
+    "title": "Research Score Per Country",
+
     "mark": "boxplot",
     "encoding": {
       "x": {

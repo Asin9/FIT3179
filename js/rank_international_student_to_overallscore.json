@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 550,
     "height": 350,
-    "title": "International Students Per University",
+    "title": "International Students vs Overall Score",
     "data": {
       "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_gender_students_decimal.csv"
     },

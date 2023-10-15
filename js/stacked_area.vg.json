@@ -5,6 +5,8 @@
       "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/amount_in_100.csv",
       "format": {"type": "csv"}
     },
+    "title": "Universities Per Country in Top 100",
+
     "transform": [
       {"fold": ["United Kingdom", "United States", "Switzerland", "China", "Canada", "Singapore", "Germany", "Hong Kong", "Australia", "Japan", "Belgium", "France", "Sweden", "South Korea", "Netherlands", "Denmark", "Taiwan", "Finland"]}
     ],
