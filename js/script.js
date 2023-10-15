@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Load the Vega-Lite specification from the file
       fetch(specificationPaths[selectedOption])
         .then(response => response.json())
-        .then(spec => vegaEmbed(vegaEmbedContainer, spec))
+        .then(spec => vegaEmbed(vegaEmbedContainer, spec, {"actions" : false}))
         .catch(console.error);
     }
   

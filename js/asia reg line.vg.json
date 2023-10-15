@@ -4,6 +4,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/Asin9/FIT3179-Assignment-2-Global-University-Data-Vis/master/data/top_100_with_adjusted_coordinates_6.csv"
   },
+  
   "title": "Teaching Score vs Students Per Staff",
   "transform": [
     {
@@ -79,6 +80,7 @@
   "height": 300,
   "config": {
     "legend": {"orient": "bottom", "layout": {"bottom": {"anchor": "middle"}}
+    
     }
   }
 }
